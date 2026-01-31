@@ -6,11 +6,9 @@ public class CameraController : MonoBehaviour {
   private float cameraHeight_ = -7.0f;
 
   void Start(){
-
     playerPrefab_ = FindFirstObjectByType<PlayerMovement>();
     if(null == playerPrefab_)
       Debug.Log("Player Not Found Biaaach");
-
   }
 
   void Update(){
