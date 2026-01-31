@@ -15,6 +15,7 @@ public class InGameMaskGenerator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //TODO: BORRAR ESTO PLS
         if (Input.GetKeyDown(KeyCode.G))
         {
             Generate();
