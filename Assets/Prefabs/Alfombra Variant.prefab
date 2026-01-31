@@ -12,9 +12,21 @@ PrefabInstance:
       propertyPath: type
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 2138450002800689688, guid: 4e7a1984b5c0fff4db3652709420004c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2138450002800689688, guid: 4e7a1984b5c0fff4db3652709420004c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2934100514903436308, guid: 4e7a1984b5c0fff4db3652709420004c, type: 3}
+      propertyPath: m_SortingOrder
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 3871623903515702594, guid: 4e7a1984b5c0fff4db3652709420004c, type: 3}
       propertyPath: m_Name
-      value: Flor Variant
+      value: Alfombra Variant
       objectReference: {fileID: 0}
     - target: {fileID: 6339189340445421191, guid: 4e7a1984b5c0fff4db3652709420004c, type: 3}
       propertyPath: m_Size.x
@@ -24,9 +36,21 @@ PrefabInstance:
       propertyPath: m_Size.y
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 6339189340445421191, guid: 4e7a1984b5c0fff4db3652709420004c, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 9.63
+      objectReference: {fileID: 0}
+    - target: {fileID: 6339189340445421191, guid: 4e7a1984b5c0fff4db3652709420004c, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 12.66
+      objectReference: {fileID: 0}
+    - target: {fileID: 6522296383680575734, guid: 4e7a1984b5c0fff4db3652709420004c, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 8da838db14a985349bc0c41594e9970e, type: 3}
     - target: {fileID: 6522296383680575734, guid: 4e7a1984b5c0fff4db3652709420004c, type: 3}
       propertyPath: m_SortingOrder
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 7256921641449550319, guid: 4e7a1984b5c0fff4db3652709420004c, type: 3}
       propertyPath: m_LocalPosition.x
