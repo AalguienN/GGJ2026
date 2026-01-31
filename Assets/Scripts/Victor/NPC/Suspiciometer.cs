@@ -13,7 +13,7 @@ public class Suspiciometer : MonoBehaviour {
 
   void FixedUpdate() {
     float actualDistance = Vector3.Distance(transform.position, playerPrefab_.transform.position);
-    if(actualDistance < detectionDistance_){
+    if(actualDistance <= detectionDistance_){
       RaycastHit2D hit = Physics2D.Raycast(transform.position, playerPrefab_.transform.position, detectionDistance_);
       if(hit){
         if(hit.transform.GetComponent<PlayerMovement>()){
