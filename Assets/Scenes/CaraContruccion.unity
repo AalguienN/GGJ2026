@@ -196,7 +196,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08d4b0e49429c654babadfc00f8b86d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Draggable
-  boolYeyDragged: 0
 --- !u!212 &278989320
 SpriteRenderer:
   serializedVersion: 2
@@ -297,7 +296,7 @@ Transform:
   m_GameObject: {fileID: 347035275}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -9.5}
+  m_LocalPosition: {x: 0, y: 0, z: -9.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -686,7 +685,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08d4b0e49429c654babadfc00f8b86d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Draggable
-  boolYeyDragged: 0
 --- !u!212 &1543975203
 SpriteRenderer:
   serializedVersion: 2
@@ -838,7 +836,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08d4b0e49429c654babadfc00f8b86d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Draggable
-  boolYeyDragged: 0
 --- !u!212 &1565496512
 SpriteRenderer:
   serializedVersion: 2
@@ -1103,7 +1100,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08d4b0e49429c654babadfc00f8b86d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Draggable
-  boolYeyDragged: 0
 --- !u!212 &1768007542
 SpriteRenderer:
   serializedVersion: 2
@@ -1435,6 +1431,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2976981204232768248, guid: b9a998b7a9677bb4b9e121c718ce4a62, type: 3}
+      propertyPath: backFromCamera
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 3270168178825420704, guid: b9a998b7a9677bb4b9e121c718ce4a62, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

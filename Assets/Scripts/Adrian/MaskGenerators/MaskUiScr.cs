@@ -21,7 +21,7 @@ public class MaskUiScr : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         collision.gameObject.TryGetComponent<Draggable>(out Draggable dragable);
-        if (dragable != null)
+        if (dragable != null && InteractUiScaler.Instance?.Interacting == InteractUiScaler.Interaction.Dragging)
         {
             Debug.Log($"{dragable.gameObject.name}");
             dragable.gameObject.transform.parent = this.transform.parent;
@@ -33,6 +33,8 @@ public class MaskUiScr : MonoBehaviour
         if (dragable != null)
         {
             dragable.gameObject.transform.parent = null;
+            dragable.gameObject.transform.localScale = Vector3.one;
         }
+
     }
 }

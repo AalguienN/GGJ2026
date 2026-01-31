@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 02035ffe21b6dae419536d45b6f0e3fe
+guid: 30133db4cf77a8b49bdb30d2afa6aa79
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,13 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: base_0
+      name: ZonaBorrado_0
       rect:
         serializedVersion: 2
-        x: 24
-        y: 516
-        width: 725
-        height: 523
+        x: 0
+        y: 0
+        width: 2360
+        height: 1640
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -112,8 +112,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4cdce4428cb8f6840be9f5a5496cf2cc
-      internalID: 216048408
+      spriteID: f8eae0077d4a43e43bddf37a2c8559f1
+      internalID: -113926647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZonaBorrado_1
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 1085
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50958ea617e6f7547b4f86d0b78d83b4
+      internalID: 238324832
       vertices: []
       indices: 
       edges: []
@@ -122,7 +144,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 29829a731ff03014395c366581e69fce
+    spriteID: c354e857f84e1e247ad3b2097559a9d7
     internalID: 0
     vertices: []
     indices: 
@@ -132,7 +154,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      base_0: 216048408
+      ZonaBorrado_0: -113926647
+      ZonaBorrado_1: 238324832
+      ZonaBorrado_2: -1895926528
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -13,7 +13,6 @@ public class Draggable : MonoBehaviour
 
     private Camera myMainCamera;
 
-    public bool boolYeyDragged;
 
     void Start()
     {
