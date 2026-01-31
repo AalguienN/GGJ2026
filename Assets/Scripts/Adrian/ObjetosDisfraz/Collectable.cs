@@ -2,32 +2,37 @@ using UnityEngine;
 
 public class Collectable : MonoBehaviour
 {
-    public enum Type { none, peine, galleta_1, galleta_2, galleta_3, gato, eleftante_juguete, cazo, bicho, flor }
+    public enum Type { none, peine, galleta, gato, eleftante_juguete, cazo, bicho, flor }
 
     public Type type = Collectable.Type.none;
+    private Animator animator;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        animator = GetComponent<Animator>();
         switch (type)
         {
             case Type.peine:
+                animator.SetTrigger("peine");
                 break;
-            case Type.galleta_1:
-                break;
-            case Type.galleta_2:
-                break;
-            case Type.galleta_3:
+            case Type.galleta:
+                animator.SetTrigger("galletas");
                 break;
             case Type.gato:
+                animator.SetTrigger("gato");
                 break;
             case Type.eleftante_juguete:
+                animator.SetTrigger("elefante");
                 break;
             case Type.cazo:
+                animator.SetTrigger("cazo");
                 break;
             case Type.bicho:
+                animator.SetTrigger("arana");
                 break;
             case Type.flor:
+                animator.SetTrigger("alfombra");
                 break;
         }
     }
