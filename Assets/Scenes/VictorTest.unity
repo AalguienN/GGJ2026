@@ -1907,7 +1907,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameController
   fillHealthBarTransform_: {fileID: 42502660}
-  timerMultiplier: 10
+  timerMultiplier: 60
   enemyController_: {fileID: 66532234}
   enemyTimeRemaining_: {fileID: 0}
   enemyTimeMultiplier_: 120
@@ -2105,7 +2105,7 @@ GameObject:
   - component: {fileID: 1742177312}
   m_Layer: 0
   m_Name: GuardaSpawn
-  m_TagString: Untagged
+  m_TagString: GuardaSpawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2263,7 +2263,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 14
+  orthographic size: 50
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -2323,7 +2323,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1928983966
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2397,6 +2397,8 @@ GameObject:
   - component: {fileID: 1932365967}
   - component: {fileID: 1932365966}
   - component: {fileID: 1932365969}
+  - component: {fileID: 1932365970}
+  - component: {fileID: 1932365971}
   m_Layer: 0
   m_Name: NPC
   m_TagString: Untagged
@@ -2492,6 +2494,42 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Suspiciometer
   detectionDistance_: 10
   gameController_: {fileID: 1623940419}
+  isDetected_: 0
+--- !u!114 &1932365970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1932365965}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b52660d755cf074b908f5977b1e80e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Druken
+  alertSpeed_: 12
+--- !u!195 &1932365971
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1932365965}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 10
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 1
+  m_BaseOffset: 0.5
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1 &1991890673
 GameObject:
   m_ObjectHideFlags: 0
