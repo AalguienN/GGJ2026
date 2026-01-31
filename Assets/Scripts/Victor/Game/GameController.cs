@@ -5,7 +5,7 @@ public class GameController : MonoBehaviour {
 
   [SerializeField] private RectTransform fillHealthBarTransform_;
   [SerializeField] private float timerMultiplier = 2.0f;  
-  private float width;
+ 
   private float originalWidth;
 
   [SerializeField] private EnemyController enemyController_;
