@@ -7,6 +7,10 @@ public class GameController : MonoBehaviour {
   [SerializeField] private float timerMultiplier = 2.0f;  
   [SerializeField] private EnemyController enemyController_;
 
+
+  public enum Zone { Outside, Inside };
+  public Zone CurrentPlayerZone = Zone.Outside;
+
   private float width = 540.0f;
 
   void Start() {
