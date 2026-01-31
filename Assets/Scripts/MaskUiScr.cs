@@ -35,5 +35,4 @@ public class MaskUiScr : MonoBehaviour
             dragable.gameObject.transform.parent = null;
         }
     }
-
 }

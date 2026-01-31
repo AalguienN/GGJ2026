@@ -69,6 +69,9 @@ public class InteractUiScaler : MonoBehaviour
 
                 objectivePhotoObj.localScale = scaleInteracting;
                 MaskUiObj.localScale = scaleInteracting;
+
+                objectivePhotoObj.transform.GetComponentInChildren<Camera>().orthographicSize = scaleInteracting.x/2;
+                MaskUiObj.transform.GetComponentInChildren<Camera>().orthographicSize = scaleInteracting.x/2;
                 break;
             case Interaction.NoInteraction:
                 //Otra guarrada
@@ -80,6 +83,9 @@ public class InteractUiScaler : MonoBehaviour
 
                 objectivePhotoObj.localScale = scaleNormal;
                 MaskUiObj.localScale = scaleNormal;
+
+                objectivePhotoObj.transform.GetComponentInChildren<Camera>().orthographicSize = scaleNormal.x/2;
+                MaskUiObj.transform.GetComponentInChildren<Camera>().orthographicSize = scaleNormal.x/2;
                 break;
         }
     }
