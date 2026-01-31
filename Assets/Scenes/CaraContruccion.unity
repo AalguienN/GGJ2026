@@ -196,7 +196,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08d4b0e49429c654babadfc00f8b86d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Draggable
-  boolYeyDragged: 0
 --- !u!212 &278989320
 SpriteRenderer:
   serializedVersion: 2
@@ -686,7 +685,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08d4b0e49429c654babadfc00f8b86d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Draggable
-  boolYeyDragged: 0
 --- !u!212 &1543975203
 SpriteRenderer:
   serializedVersion: 2
@@ -838,7 +836,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08d4b0e49429c654babadfc00f8b86d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Draggable
-  boolYeyDragged: 0
 --- !u!212 &1565496512
 SpriteRenderer:
   serializedVersion: 2
@@ -1103,7 +1100,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08d4b0e49429c654babadfc00f8b86d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Draggable
-  boolYeyDragged: 0
 --- !u!212 &1768007542
 SpriteRenderer:
   serializedVersion: 2
@@ -1382,10 +1378,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: MasckHolder
       objectReference: {fileID: 0}
-    - target: {fileID: 7151988785229600567, guid: 17cf142e135ce3a40a7a73636f646328, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 1699002042, guid: 27c3dc7507805a843a3018c862d0815a, type: 3}
     - target: {fileID: 7412898943788089069, guid: 17cf142e135ce3a40a7a73636f646328, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1439,6 +1431,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2976981204232768248, guid: b9a998b7a9677bb4b9e121c718ce4a62, type: 3}
+      propertyPath: backFromCamera
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 3270168178825420704, guid: b9a998b7a9677bb4b9e121c718ce4a62, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1483,14 +1479,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: ObjectiveMaskHolder
       objectReference: {fileID: 0}
-    - target: {fileID: 6502870299454235401, guid: b9a998b7a9677bb4b9e121c718ce4a62, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 216048408, guid: 02035ffe21b6dae419536d45b6f0e3fe, type: 3}
-    - target: {fileID: 7072066604893030493, guid: b9a998b7a9677bb4b9e121c718ce4a62, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 1699002042, guid: 27c3dc7507805a843a3018c862d0815a, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

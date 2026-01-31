@@ -25,6 +25,7 @@ public class InteractUiScaler : MonoBehaviour
     [Header("Offsets")]
     public Vector3 offsetNormal;
     public Vector3 offsetInteracting;
+    public float backFromCamera;
 
     [Header("Scales")]
     public Vector3 scaleNormal;
@@ -54,8 +55,8 @@ public class InteractUiScaler : MonoBehaviour
         Vector3 esquina_1_0 = myMainCamera.ScreenToWorldPoint(new Vector3(Screen.width, 0, 0));
         Vector3 esquina_1_1 = myMainCamera.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, 0));
 
-        esquina_0_0.z = esquina_0_0.z + 1;
-        esquina_1_0.z = esquina_1_0.z + 1;
+        esquina_0_0.z = esquina_0_0.z + backFromCamera;
+        esquina_1_0.z = esquina_1_0.z + backFromCamera;
 
         switch (int_state)
         {
@@ -84,8 +85,8 @@ public class InteractUiScaler : MonoBehaviour
                 objectivePhotoObj.localScale = scaleNormal;
                 MaskUiObj.localScale = scaleNormal;
 
-                objectivePhotoObj.transform.GetComponentInChildren<Camera>().orthographicSize = scaleNormal.x/2;
-                MaskUiObj.transform.GetComponentInChildren<Camera>().orthographicSize = scaleNormal.x/2;
+                objectivePhotoObj.transform.GetComponentInChildren<Camera>().orthographicSize = scaleNormal.x * 8;
+                MaskUiObj.transform.GetComponentInChildren<Camera>().orthographicSize = scaleNormal.x * 8;
                 break;
         }
     }

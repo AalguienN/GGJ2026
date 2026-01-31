@@ -36,6 +36,7 @@ public class InGameMaskGenerator : MonoBehaviour
         foreach (Draggable d in listDragables)
         {
             GameObject clone = Instantiate(d.gameObject);
+            clone.GetComponent<Draggable>().enabled = false;
             clone.transform.parent = this.transform;
             clone.transform.localPosition = d.transform.localPosition;
             clone.transform.localScale = d.transform.localScale;

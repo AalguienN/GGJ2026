@@ -33,6 +33,8 @@ public class MaskUiScr : MonoBehaviour
         if (dragable != null)
         {
             dragable.gameObject.transform.parent = null;
+            dragable.gameObject.transform.localScale = Vector3.one;
         }
+
     }
 }
