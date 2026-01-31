@@ -15,11 +15,18 @@ public class InteractUiScaler : MonoBehaviour
     public enum Interaction { Dragging, NoInteraction}
     private Interaction interacting = Interaction.NoInteraction;
 
+    public GameObject circleSelection;
+
     [Header("Interacting")]
     public Interaction Interacting
     {
         get => interacting;
-        set { interacting = value; Debug.Log(value);  HandleInteractionPositions(value); }
+        set { 
+            interacting = value; 
+            Debug.Log(value);  
+            HandleInteractionPositions(value);
+            circleSelection.SetActive(interacting == Interaction.Dragging);
+        }
     }
 
     [Header("Offsets")]
