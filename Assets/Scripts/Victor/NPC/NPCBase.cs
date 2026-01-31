@@ -1,25 +1,37 @@
 using UnityEngine;
 using UnityEngine.AI;
 
-public abstract class NPCBase : MonoBehaviour {
+public class NPCBase : MonoBehaviour {
   
-  private NavMeshAgent navAgent_;
-  private Suspiciometer suspiciometer_;
+  [SerializeField, Range(1.0f, 100.0f), HideInInspector] public float alertSpeed_; 
+
+  [HideInInspector] public GameObject frontDoorPosition_;
+  [HideInInspector] public NavMeshAgent navAgent_;
+  [HideInInspector] public Suspiciometer suspiciometer_;
 
 
-  void Start() {
+  public virtual void Start() {
+    frontDoorPosition_ = GameObject.FindGameObjectWithTag("GuardaSpawn");
+    if(!frontDoorPosition_)
+      Debug.Log("No hay puerta");
+
     navAgent_ = GetComponent<NavMeshAgent>();
     suspiciometer_ = GetComponent<Suspiciometer>();
+    if(!suspiciometer_)
+      Debug.Log("No hay sospechoso");
   }
 
-  void Update() {
-    transform.rotation = new Quaternion(0.0f, 0.0f, 0.0f, 0.0f);
+  public void CallThePolice(){
+    if(suspiciometer_.isDetected_){
+      Debug.Log("Police");
+      navAgent_.speed = alertSpeed_;
+      navAgent_.SetDestination(frontDoorPosition_.transform.position);
+      if(navAgent_.isStopped){
+
+      }
+    }
   }
 
-  void CallThePolice(){
-
-  }
-
-  public abstract void Behaviour();
+  public virtual void Behaviour() {}
 
 }

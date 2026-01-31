@@ -9,8 +9,11 @@ public class Suspiciometer : MonoBehaviour {
   private float distanceIncresing_;
   private float currentDistance_;
 
+  public bool isDetected_;
+
   void Start() {
     distanceIncresing_ = 0.0f;
+    isDetected_ = false;
 
     playerPrefab_ = FindFirstObjectByType<PlayerMovement>();
     if(null == playerPrefab_)
@@ -31,10 +34,8 @@ public class Suspiciometer : MonoBehaviour {
 
       float magnitude = alpha.magnitude;
 
-      // Debug.Log(magnitude);
-
-      if(magnitude >= currentDistance_ * 0.5f){
-        Debug.Log("Pillao");
+      if(magnitude <= currentDistance_ * 0.5f + distanceIncresing_ * 0.5f){
+        isDetected_ = true;
       }
 
 
@@ -46,8 +47,10 @@ public class Suspiciometer : MonoBehaviour {
   }
 
   void OnDrawGizmos() {
-    Gizmos.color = Color.red;
+    Gizmos.color = Color.orange;
     Gizmos.DrawWireSphere(transform.position, currentDistance_);
+    Gizmos.color = Color.red;
+    Gizmos.DrawWireSphere(transform.position, currentDistance_ * 0.5f + distanceIncresing_ * 0.5f);
   }
 
 }

@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 3
   tags:
   - Collectable
+  - GuardaSpawn
   layers:
   - Default
   - TransparentFX
