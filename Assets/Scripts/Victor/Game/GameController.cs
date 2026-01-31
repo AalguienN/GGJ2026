@@ -5,7 +5,7 @@ public class GameController : MonoBehaviour {
 
   [SerializeField] private RectTransform fillHealthBarTransform_;
   [SerializeField] private float timerMultiplier = 2.0f;  
- 
+
   private float originalWidth;
 
   [SerializeField] private EnemyController enemyController_;
@@ -15,8 +15,7 @@ public class GameController : MonoBehaviour {
 
   public float accumulatedTime_;
 
-  public enum Zone { Outside, Inside };
-  public Zone CurrentPlayerZone = Zone.Outside;
+  public static Zone.ZType CurrentPlayerZone = Zone.ZType.Outside;
 
   private float width = 540.0f;
 
