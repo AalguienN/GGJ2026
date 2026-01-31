@@ -25,6 +25,7 @@ public class Draggable : MonoBehaviour
         float planeDist;
         dragPlane.Raycast(camRay, out planeDist);
         offset = transform.position - camRay.GetPoint(planeDist);
+        InteractUiScaler.Instance.Interacting = InteractUiScaler.Interaction.Dragging;
     }
 
     void OnMouseDrag()
@@ -34,5 +35,10 @@ public class Draggable : MonoBehaviour
         float planeDist;
         dragPlane.Raycast(camRay, out planeDist);
         transform.position = camRay.GetPoint(planeDist) + offset;
+    }
+
+    private void OnMouseUp()
+    {
+        InteractUiScaler.Instance.Interacting = InteractUiScaler.Interaction.NoInteraction;
     }
 }
