@@ -74,11 +74,10 @@ public class GameController : MonoBehaviour {
     }
   }
 
-<<<<<<< HEAD
   public void SpawnGuard(bool b){
     enemyController_.gameObject.SetActive(b);
   } 
-=======
+
     void GenerateReceta()
     {
         Receta.Add(Ingredientes[0]);
@@ -113,6 +112,5 @@ public class GameController : MonoBehaviour {
     {
         Debug.Log("YOU WIN!");
     }
->>>>>>> 4295e940e9cc4fdd2b009b26b3174f7d1569e120
 
 }
