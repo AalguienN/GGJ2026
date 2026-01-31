@@ -26,7 +26,7 @@ public class GameController : MonoBehaviour {
   }
 
   void Update() {
-    MaskTimer();
+    // MaskTimer();
     // EnemyTimer();
 
   }
@@ -50,5 +50,9 @@ public class GameController : MonoBehaviour {
       }
     }
   }
+
+  public void SpawnGuard(bool b){
+    enemyController_.gameObject.SetActive(b);
+  } 
 
 }

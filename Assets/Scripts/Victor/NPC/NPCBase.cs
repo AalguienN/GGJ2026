@@ -9,29 +9,37 @@ public class NPCBase : MonoBehaviour {
   [HideInInspector] public NavMeshAgent navAgent_;
   [HideInInspector] public Suspiciometer suspiciometer_;
 
+  protected GameController gameController_;
 
   public virtual void Start() {
     frontDoorPosition_ = GameObject.FindGameObjectWithTag("GuardaSpawn");
-    if(!frontDoorPosition_)
-      Debug.Log("No hay puerta");
-
     navAgent_ = GetComponent<NavMeshAgent>();
     suspiciometer_ = GetComponent<Suspiciometer>();
-    if(!suspiciometer_)
-      Debug.Log("No hay sospechoso");
+    gameController_ = FindFirstObjectByType<GameController>();
   }
 
   public void CallThePolice(){
     if(suspiciometer_.isDetected_){
-      Debug.Log("Police");
       navAgent_.speed = alertSpeed_;
       navAgent_.SetDestination(frontDoorPosition_.transform.position);
-      if(navAgent_.isStopped){
-
+      if(AtEndOfPath()){
+        gameController_.SpawnGuard(true);
       }
     }
   }
 
   public virtual void Behaviour() {}
+
+
+  public float pathEndThreshold = 0.1f;
+  private bool hasPath = false;
+  public bool AtEndOfPath() {
+    hasPath |= navAgent_.hasPath;
+    if (hasPath && navAgent_.remainingDistance <= navAgent_.stoppingDistance + pathEndThreshold ) {
+        hasPath = false;
+        return true;
+    }
+    return false;
+  }
 
 }
