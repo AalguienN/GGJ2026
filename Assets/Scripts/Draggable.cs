@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -12,6 +13,8 @@ public class Draggable : MonoBehaviour
 
     private Camera myMainCamera;
 
+    public bool boolYeyDragged;
+
     void Start()
     {
         myMainCamera = Camera.main; // Camera.main is expensive ; cache it here
@@ -23,18 +26,23 @@ public class Draggable : MonoBehaviour
         Ray camRay = myMainCamera.ScreenPointToRay(Input.mousePosition);
 
         float planeDist;
+        LayerMask layerMask = LayerMask.GetMask(new string[] { "Draggable" });
         dragPlane.Raycast(camRay, out planeDist);
+
+        Debug.Log($"{planeDist} {this.name}");
         offset = transform.position - camRay.GetPoint(planeDist);
         InteractUiScaler.Instance.Interacting = InteractUiScaler.Interaction.Dragging;
     }
 
     void OnMouseDrag()
     {
-        Ray camRay = myMainCamera.ScreenPointToRay(Input.mousePosition);
+        dragPlane = new Plane(myMainCamera.transform.forward, transform.position);
 
-        float planeDist;
-        dragPlane.Raycast(camRay, out planeDist);
-        transform.position = camRay.GetPoint(planeDist) + offset;
+        Ray camRay = myMainCamera.ScreenPointToRay(Input.mousePosition);
+        if (dragPlane.Raycast(camRay, out float planeDist))
+        {
+            transform.position = camRay.GetPoint(planeDist) + offset;
+        }
     }
 
     private void OnMouseUp()

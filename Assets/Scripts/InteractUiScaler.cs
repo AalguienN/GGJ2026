@@ -21,10 +21,14 @@ public class InteractUiScaler : MonoBehaviour
         get => interacting;
         set { interacting = value; Debug.Log(value);  HandleInteractionPositions(value); }
     }
+
     [Header("Offsets")]
     public Vector3 offsetNormal;
     public Vector3 offsetInteracting;
 
+    [Header("Scales")]
+    public Vector3 scaleNormal;
+    public Vector3 scaleInteracting;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -34,8 +38,8 @@ public class InteractUiScaler : MonoBehaviour
 
         //Cacheando
         myMainCamera = Camera.main;
-        objectivePhotoObj = gameObject.GetComponentInChildren<ObjectivePhotoScr>().transform;
-        MaskUiObj = gameObject.GetComponentInChildren<MaskUiScr>().transform;
+        objectivePhotoObj = gameObject.GetComponentInChildren<ObjectivePhotoScr>().transform.parent;
+        MaskUiObj = gameObject.GetComponentInChildren<MaskUiScr>().transform.parent;
         Interacting = Interaction.NoInteraction;
     }
 
@@ -50,8 +54,8 @@ public class InteractUiScaler : MonoBehaviour
         Vector3 esquina_1_0 = myMainCamera.ScreenToWorldPoint(new Vector3(Screen.width, 0, 0));
         Vector3 esquina_1_1 = myMainCamera.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, 0));
 
-        esquina_0_0.z = esquina_0_0.z + 1;
-        esquina_1_0.z = esquina_1_0.z + 1;
+        esquina_0_0.z = esquina_0_0.z + 2;
+        esquina_1_0.z = esquina_1_0.z + 2;
 
         switch (int_state)
         {
@@ -62,6 +66,9 @@ public class InteractUiScaler : MonoBehaviour
                 Vector3 offsetInteractingScaledFlippedX = new Vector3(-offsetInteractingScaled.x, offsetInteractingScaled.y, offsetInteractingScaled.z);
                 objectivePhotoObj.position = esquina_0_0 + offsetInteractingScaled;
                 MaskUiObj.position = esquina_1_0 + offsetInteractingScaledFlippedX;
+
+                objectivePhotoObj.localScale = scaleInteracting;
+                MaskUiObj.localScale = scaleInteracting;
                 break;
             case Interaction.NoInteraction:
                 //Otra guarrada
@@ -70,6 +77,9 @@ public class InteractUiScaler : MonoBehaviour
                 Vector3 offsetNormalScaledFlippedX = new Vector3(-offsetNormalScaled.x, offsetNormalScaled.y, offsetNormalScaled.z);
                 objectivePhotoObj.position = esquina_0_0 + offsetNormalScaled;
                 MaskUiObj.position = esquina_1_0 + offsetNormalScaledFlippedX;
+
+                objectivePhotoObj.localScale = scaleNormal;
+                MaskUiObj.localScale = scaleNormal;
                 break;
         }
     }
