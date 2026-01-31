@@ -297,7 +297,7 @@ Transform:
   m_GameObject: {fileID: 347035275}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -9.5}
+  m_LocalPosition: {x: 0, y: 0, z: -9.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1382,6 +1382,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MasckHolder
       objectReference: {fileID: 0}
+    - target: {fileID: 7151988785229600567, guid: 17cf142e135ce3a40a7a73636f646328, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1699002042, guid: 27c3dc7507805a843a3018c862d0815a, type: 3}
     - target: {fileID: 7412898943788089069, guid: 17cf142e135ce3a40a7a73636f646328, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1479,6 +1483,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: ObjectiveMaskHolder
       objectReference: {fileID: 0}
+    - target: {fileID: 6502870299454235401, guid: b9a998b7a9677bb4b9e121c718ce4a62, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 216048408, guid: 02035ffe21b6dae419536d45b6f0e3fe, type: 3}
+    - target: {fileID: 7072066604893030493, guid: b9a998b7a9677bb4b9e121c718ce4a62, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1699002042, guid: 27c3dc7507805a843a3018c862d0815a, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

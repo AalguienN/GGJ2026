@@ -54,8 +54,8 @@ public class InteractUiScaler : MonoBehaviour
         Vector3 esquina_1_0 = myMainCamera.ScreenToWorldPoint(new Vector3(Screen.width, 0, 0));
         Vector3 esquina_1_1 = myMainCamera.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, 0));
 
-        esquina_0_0.z = esquina_0_0.z + 2;
-        esquina_1_0.z = esquina_1_0.z + 2;
+        esquina_0_0.z = esquina_0_0.z + 1;
+        esquina_1_0.z = esquina_1_0.z + 1;
 
         switch (int_state)
         {
