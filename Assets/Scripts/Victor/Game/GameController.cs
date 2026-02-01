@@ -24,7 +24,7 @@ public class GameController : MonoBehaviour {
   private float enemyOriginalWidth_ = 670.0f;
   private bool isEmpty_;
   private bool isReset_;
-  private bool isInvincible;
+  // private bool isInvincible;
 
   public float accumulatedTime_;
 
@@ -164,7 +164,7 @@ public class GameController : MonoBehaviour {
             isReset_ = true;
             enemyController_.isLeaving_ = true;
             RefillEnemyBar();
-            isInvincible = true;
+            // isInvincible = true;
 
             Debug.Log("HELL YEA");
             NextObjective();
