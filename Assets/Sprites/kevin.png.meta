@@ -6,7 +6,7 @@ TextureImporter:
   serializedVersion: 13
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -37,13 +37,13 @@ TextureImporter:
     filterMode: 1
     aniso: 1
     mipBias: 0
-    wrapU: 0
-    wrapV: 0
+    wrapU: 1
+    wrapV: 1
     wrapW: 0
-  nPOTScale: 1
+  nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -52,9 +52,9 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 0
+  textureType: 8
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -95,12 +95,144 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: kevin_0
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 1444
+        width: 910
+        height: 1158
+      alignment: 9
+      pivot: {x: 0.4562064, y: 0.00385544}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae5f1180e70ed8040a130a4db8155b06
+      internalID: -322858153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kevin_1
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1444
+        width: 907
+        height: 1141
+      alignment: 9
+      pivot: {x: 0.46704626, y: 0.0051951027}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f12d32c435067f745ab45d80916cd05f
+      internalID: -361386184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kevin_2
+      rect:
+        serializedVersion: 2
+        x: 2448
+        y: 1444
+        width: 899
+        height: 1168
+      alignment: 9
+      pivot: {x: 0.42242357, y: 0.008103149}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ec223a730ad37542bb115fbc8f3f227
+      internalID: -354998083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kevin_3
+      rect:
+        serializedVersion: 2
+        x: 3478
+        y: 1449
+        width: 910
+        height: 1153
+      alignment: 9
+      pivot: {x: 0.46350473, y: 0.010344745}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49b951e1ea52cdd408613081d54978cf
+      internalID: -319371417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kevin_4
+      rect:
+        serializedVersion: 2
+        x: 4539
+        y: 1446
+        width: 907
+        height: 1139
+      alignment: 9
+      pivot: {x: 0.4926774, y: 0.010157664}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9de3f6db13be33042bdee6c1e59a671e
+      internalID: -257333056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kevin_5
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 100
+        width: 899
+        height: 1163
+      alignment: 9
+      pivot: {x: 0.38917637, y: 0.00027731503}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a59ca04322c58f54bb8b8f62463c768a
+      internalID: 770812715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 22c89114ffcf344419bc65f34d56eabf
     internalID: 0
     vertices: []
     indices: 
@@ -108,8 +240,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
-    nameFileIdTable: {}
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      kevin_0: -322858153
+      kevin_1: -361386184
+      kevin_2: -354998083
+      kevin_3: -319371417
+      kevin_4: -257333056
+      kevin_5: 770812715
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
