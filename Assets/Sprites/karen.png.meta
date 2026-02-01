@@ -6,7 +6,7 @@ TextureImporter:
   serializedVersion: 13
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 0
+    enableMipMap: 1
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -37,13 +37,13 @@ TextureImporter:
     filterMode: 1
     aniso: 1
     mipBias: 0
-    wrapU: 1
-    wrapV: 1
+    wrapU: 0
+    wrapV: 0
     wrapW: 0
-  nPOTScale: 0
+  nPOTScale: 1
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 0
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -52,9 +52,9 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 1
+  alphaIsTransparency: 0
   spriteTessellationDetail: -1
-  textureType: 8
+  textureType: 0
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -95,144 +95,12 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: karen_0
-      rect:
-        serializedVersion: 2
-        x: 121
-        y: 1444
-        width: 899
-        height: 1117
-      alignment: 9
-      pivot: {x: 0.46675295, y: 0.009429358}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6bdd2c51cf44084479b531ad3742e635
-      internalID: -172214502
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: karen_1
-      rect:
-        serializedVersion: 2
-        x: 1190
-        y: 1444
-        width: 899
-        height: 1109
-      alignment: 9
-      pivot: {x: 0.47783536, y: 0.008885155}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 037cc2895472c614b95334687c0631f7
-      internalID: 120237157
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: karen_2
-      rect:
-        serializedVersion: 2
-        x: 2429
-        y: 1445
-        width: 901
-        height: 1124
-      alignment: 9
-      pivot: {x: 0.40416628, y: 0.0065753977}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 74e3e3931f738c146bcae207b6437d6f
-      internalID: 2060635951
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: karen_3
-      rect:
-        serializedVersion: 2
-        x: 3459
-        y: 1452
-        width: 901
-        height: 1109
-      alignment: 9
-      pivot: {x: 0.4815705, y: 0.011879896}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f476156c5ce8ba348b69845a9d909b6f
-      internalID: -3562137
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: karen_4
-      rect:
-        serializedVersion: 2
-        x: 4536
-        y: 1449
-        width: 901
-        height: 1100
-      alignment: 9
-      pivot: {x: 0.4926281, y: -0.0011710982}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8c054dd151a35ed42afdc169eec53e2f
-      internalID: 603885713
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: karen_5
-      rect:
-        serializedVersion: 2
-        x: 198
-        y: 100
-        width: 899
-        height: 1123
-      alignment: 9
-      pivot: {x: 0.39287046, y: 0.012050435}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d611b2594b83c7348b2ce1079742d8ed
-      internalID: 1148144340
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 0eafcf0e6a2556844b6a9a21908832bf
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -240,16 +108,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries:
-      - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
-    nameFileIdTable:
-      karen_0: -172214502
-      karen_1: 120237157
-      karen_2: 2060635951
-      karen_3: -3562137
-      karen_4: 603885713
-      karen_5: 1148144340
+      entries: []
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
