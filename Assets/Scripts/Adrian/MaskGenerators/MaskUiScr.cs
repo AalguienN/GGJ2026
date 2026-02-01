@@ -1,4 +1,8 @@
+using NUnit.Framework;
 using System;
+using System.Collections.Generic;
+using System.Linq;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class MaskUiScr : MonoBehaviour
@@ -25,6 +29,10 @@ public class MaskUiScr : MonoBehaviour
         {
             Debug.Log($"{dragable.gameObject.name}");
             dragable.gameObject.transform.parent = this.transform.parent;
+            GameController.Instance.HoldedTypes = new();
+            HashSet<Collectable> typesHas;
+            List<Collectable> types = GetComponentsInChildren<Collectable>().ToList();
+
         }
     }    
     private void OnTriggerExit2D(Collider2D collision)
@@ -35,6 +43,5 @@ public class MaskUiScr : MonoBehaviour
             dragable.gameObject.transform.parent = null;
             dragable.gameObject.transform.localScale = Vector3.one;
         }
-
     }
 }

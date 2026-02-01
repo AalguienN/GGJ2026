@@ -23,10 +23,11 @@ public class GameController : MonoBehaviour {
 
   private float width = 540.0f;
 
+  public List<Collectable.Type> HoldedTypes;
   public List<ObjetivoSO> Ingredientes;
   public List<ObjetivoSO> Receta;
-    public int Completados = 0;
-    public ObjetivoSO ObjetivoActual;
+  public int Completados = 0;
+  public ObjetivoSO ObjetivoActual;
 
   void Start() {
     if (Instance == null)
