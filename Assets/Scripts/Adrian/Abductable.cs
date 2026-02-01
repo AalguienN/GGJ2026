@@ -45,13 +45,10 @@ public class Abductable : MonoBehaviour
                 GameController.Instance.TryNextObjective();
                 gameObject.SetActive(false);
             }
-            var listDragables =  InGameMaskGenerator.Instance.transform.parent.GetComponentsInChildren<Draggable>();
-            Debug.Log("---------------");
-            Debug.Log(listDragables.Count());
+            var listDragables =  MaskUiScr.Instance.transform.parent.GetComponentsInChildren<Draggable>();
             foreach (var d in listDragables)
             {
-                Debug.Log(d);
-                Destroy(d);
+                Destroy(d.gameObject);
             }
         }
         else

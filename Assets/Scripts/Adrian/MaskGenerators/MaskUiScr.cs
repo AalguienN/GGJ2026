@@ -7,9 +7,15 @@ using UnityEngine;
 
 public class MaskUiScr : MonoBehaviour
 {
+    public static MaskUiScr Instance;
     Plane dragPlane;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private Camera myMainCamera;
+    private void Awake()
+    {
+        if (Instance == null) Instance = this;
+        else Destroy(this);
+    }
 
     void Start()
     {
@@ -40,7 +46,7 @@ public class MaskUiScr : MonoBehaviour
         if (dragable != null)
         {
             dragable.gameObject.transform.parent = null;
-            dragable.gameObject.transform.localScale = Vector3.one;
+            dragable.gameObject.transform.localScale = 2*Vector3.one;
             RefreshCollectables();
         }
     }
