@@ -3,7 +3,7 @@ using UnityEngine.AI;
 
 public class NPCBase : MonoBehaviour {
   
-  [SerializeField, Range(1.0f, 100.0f), HideInInspector] public float alertSpeed_; 
+  [SerializeField, Range(1.0f, 100.0f)] public float alertSpeed_; 
 
   [HideInInspector] public GameObject frontDoorPosition_;
   [HideInInspector] public NavMeshAgent navAgent_;
@@ -24,6 +24,7 @@ public class NPCBase : MonoBehaviour {
       navAgent_.SetDestination(frontDoorPosition_.transform.position);
       if(AtEndOfPath()){
         gameController_.SpawnGuard(true);
+        suspiciometer_.isDetected_ = false;
       }
     // }
   }
