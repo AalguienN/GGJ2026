@@ -40,7 +40,7 @@ public class Draggable : MonoBehaviour
 
     void OnMouseDown()
     {
-        if (!Selectable) return;
+        if (!Selectable && transform.parent == null) return;
         dragPlane = new Plane(myMainCamera.transform.forward, transform.position);
         Ray camRay = myMainCamera.ScreenPointToRay(Input.mousePosition);
         YEYIAMDRAGGEDTHISFRAME = true;
@@ -56,7 +56,7 @@ public class Draggable : MonoBehaviour
 
     void OnMouseDrag()
     {
-        if (!Selectable) return;
+        if (!Selectable && transform.parent == null) return;
         dragPlane = new Plane(myMainCamera.transform.forward, transform.position);
 
         Ray camRay = myMainCamera.ScreenPointToRay(Input.mousePosition);

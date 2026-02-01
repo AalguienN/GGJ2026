@@ -116,10 +116,15 @@ public class GameController : MonoBehaviour {
         PortraitManager.Instance.UpdatePortrait(ObjetivoActual.portrait);
     }
 
+    public bool IsCorrectMaskCorrect() {
+
+        return HoldedTypes.Count == ObjetivoActual.RequiredObjects.Count &&
+            HoldedTypes.ToHashSet().SetEquals(ObjetivoActual.RequiredObjects.ToHashSet());
+    }
+
     public void TryNextObjective()
     {
-        if (HoldedTypes.Count == ObjetivoActual.RequiredObjects.Count &&
-            HoldedTypes.ToHashSet().SetEquals(ObjetivoActual.RequiredObjects.ToHashSet()))
+        if (IsCorrectMaskCorrect())
         {
             Debug.Log("HELL YEA");
             NextObjective();
