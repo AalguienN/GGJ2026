@@ -6,6 +6,7 @@ using UnityEngine;
 public class InGameMaskGenerator : MonoBehaviour
 {
     public MaskUiScr maskUI;
+    public Transform maskT;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -37,7 +38,7 @@ public class InGameMaskGenerator : MonoBehaviour
         {
             GameObject clone = Instantiate(d.gameObject);
             clone.GetComponent<Draggable>().enabled = false;
-            clone.transform.parent = this.transform;
+            clone.transform.parent = maskT;
             clone.transform.localPosition = d.transform.localPosition;
             clone.transform.localScale = d.transform.localScale;
             clone.transform.localRotation = d.transform.localRotation;
