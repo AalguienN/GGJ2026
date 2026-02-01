@@ -228,7 +228,7 @@ TextureImporter:
         width: 895
         height: 1210
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -237,6 +237,116 @@ TextureImporter:
       bones: []
       spriteID: c2f10fc4f45d6c54cbf12a0adefcf7db
       internalID: -1154749310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MustardFace
+      rect:
+        serializedVersion: 2
+        x: 3221
+        y: 1809
+        width: 741
+        height: 541
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 651b0d2815fd57e4c81136bf2741b234
+      internalID: -130246031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DumbFace
+      rect:
+        serializedVersion: 2
+        x: 2278
+        y: 1823
+        width: 786
+        height: 657
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b68c78bbc94cb4941a8988b485c4870b
+      internalID: 1637055526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexanderFace
+      rect:
+        serializedVersion: 2
+        x: 4034
+        y: 1802
+        width: 765
+        height: 537
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd5bc88b9bf4dac488d0db89450b82a4
+      internalID: 1472199185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KarenFace
+      rect:
+        serializedVersion: 2
+        x: 4919
+        y: 1704
+        width: 916
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dc4bc1372303b5429e8082598a377ea
+      internalID: 1300572482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KevinFace
+      rect:
+        serializedVersion: 2
+        x: 2172
+        y: 478
+        width: 914
+        height: 741
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6e4a248f77e1ab4a8cd777f9ddf91a9
+      internalID: -1600009586
       vertices: []
       indices: 
       edges: []
@@ -256,11 +366,16 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       Alexander The Human: 460174299
+      AlexanderFace: 1472199185
       Dumb: -1385217992
+      DumbFace: 1637055526
       Guard: -1529937440
       Karen: -1294344256
+      KarenFace: 1300572482
       Kevin The Yunkie: -1154749310
+      KevinFace: -1600009586
       Mustard: -1746528397
+      MustardFace: -130246031
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
