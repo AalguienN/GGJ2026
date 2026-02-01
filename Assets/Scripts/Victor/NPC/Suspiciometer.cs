@@ -5,7 +5,6 @@ public class Suspiciometer : MonoBehaviour {
   [SerializeField, Range(0.0f, 100.0f)] private float detectionDistance_;
   private PlayerMovement playerPrefab_;
 
-  [SerializeField] private GameController gameController_;
   private float distanceIncresing_;
   private float currentDistance_;
 
@@ -21,7 +20,7 @@ public class Suspiciometer : MonoBehaviour {
   }
 
   void Update(){
-    distanceIncresing_ = gameController_.accumulatedTime_ / 54.0f; 
+    distanceIncresing_ = GameController.Instance.accumulatedTime_ / 54.0f; 
 
   }
 

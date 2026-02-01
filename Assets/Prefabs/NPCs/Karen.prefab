@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 8958041722708433048}
   - component: {fileID: 4011427460577428209}
   - component: {fileID: 7749323352679390137}
-  - component: {fileID: 8826859708506319639}
   - component: {fileID: 7856475711376512194}
+  - component: {fileID: 7313996194797731959}
   m_Layer: 0
   m_Name: Karen
   m_TagString: Untagged
@@ -107,25 +107,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Suspiciometer
   detectionDistance_: 10
-  gameController_: {fileID: 0}
   isDetected_: 0
---- !u!114 &8826859708506319639
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8614720653901348487}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b52660d755cf074b908f5977b1e80e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Druken
-  alertSpeed_: 12
-  frontDoorPosition_: {fileID: 0}
-  navAgent_: {fileID: 0}
-  suspiciometer_: {fileID: 0}
-  pathEndThreshold: 0.1
 --- !u!195 &7856475711376512194
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -148,3 +130,22 @@ NavMeshAgent:
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &7313996194797731959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8614720653901348487}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b77f52b238b1f1c459f48dba6cab604d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Karen
+  alertSpeed_: 0
+  frontDoorPosition_: {fileID: 0}
+  navAgent_: {fileID: 0}
+  suspiciometer_: {fileID: 0}
+  pathEndThreshold: 0.1
+  interestPoints_:
+  - {fileID: 0}
