@@ -95,12 +95,144 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: animacionAlan1_0
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 101
+        width: 794
+        height: 955
+      alignment: 9
+      pivot: {x: 0.40777013, y: 0.0076258876}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f91682b42fcc1848aa510c9c1b73d77
+      internalID: -1781640760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacionAlan1_1
+      rect:
+        serializedVersion: 2
+        x: 1202
+        y: 97
+        width: 784
+        height: 941
+      alignment: 9
+      pivot: {x: 0.33776778, y: 0.0043964284}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6d9109c7d8b67d40a0ca073a70f7a60
+      internalID: -788751687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacionAlan1_2
+      rect:
+        serializedVersion: 2
+        x: 2454
+        y: 97
+        width: 784
+        height: 958
+      alignment: 9
+      pivot: {x: 0.52458036, y: 0.0051447125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 589919896c4dca743a263ca830605ed6
+      internalID: -1496633189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacionAlan1_3
+      rect:
+        serializedVersion: 2
+        x: 3474
+        y: 100
+        width: 794
+        height: 952
+      alignment: 9
+      pivot: {x: 0.69416803, y: 0.0060743843}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66b3ab1b3bde2c943a018dc46a655b9b
+      internalID: 95436724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacionAlan1_4
+      rect:
+        serializedVersion: 2
+        x: 4550
+        y: 100
+        width: 784
+        height: 932
+      alignment: 9
+      pivot: {x: 0.6523998, y: 0.0037459673}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfd1515b5bcb2db489e705e093d2dc30
+      internalID: 1789086187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacionAlan1_5
+      rect:
+        serializedVersion: 2
+        x: 5802
+        y: 100
+        width: 784
+        height: 955
+      alignment: 9
+      pivot: {x: 0.5294962, y: -0.00044562056}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b4d9468d21ebe24fa530048087da40e
+      internalID: 82910020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 771dfe43aa646464aa7d12eb88242d06
     internalID: 0
     vertices: []
     indices: 
@@ -108,8 +240,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
-    nameFileIdTable: {}
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      animacionAlan1_0: -1781640760
+      animacionAlan1_1: -788751687
+      animacionAlan1_2: -1496633189
+      animacionAlan1_3: 95436724
+      animacionAlan1_4: 1789086187
+      animacionAlan1_5: 82910020
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
