@@ -11,7 +11,7 @@ public class EnemyController : MonoBehaviour {
   public bool isLeaving_;
   public bool isIdle_;
 
-  private Animator animator_;
+  public Animator animator_;
 
   void Start(){
     navAgent_ = GetComponent<NavMeshAgent>();

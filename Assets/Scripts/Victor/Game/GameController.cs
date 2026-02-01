@@ -123,6 +123,7 @@ public class GameController : MonoBehaviour {
     enemyController_.isIdle_ = false;
     enemyController_.isLeaving_ = false;
     enemyTimer_.SetActive(true);
+    enemyController_.animator_.SetBool("IsIdle", b);
   } 
 
     void GenerateReceta()

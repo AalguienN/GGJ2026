@@ -4404,6 +4404,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 5780530196708817, guid: f3c9e6428142d9043a8b80d56e2171a5, type: 3}
+      propertyPath: m_Speed
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 5780530196708817, guid: f3c9e6428142d9043a8b80d56e2171a5, type: 3}
       propertyPath: m_Height
       value: 1
       objectReference: {fileID: 0}
@@ -4414,6 +4418,10 @@ PrefabInstance:
     - target: {fileID: 5780530196708817, guid: f3c9e6428142d9043a8b80d56e2171a5, type: 3}
       propertyPath: m_BaseOffset
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5780530196708817, guid: f3c9e6428142d9043a8b80d56e2171a5, type: 3}
+      propertyPath: m_Acceleration
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 5780530196708817, guid: f3c9e6428142d9043a8b80d56e2171a5, type: 3}
       propertyPath: m_ObstacleAvoidanceType
@@ -4567,6 +4575,10 @@ PrefabInstance:
       propertyPath: enemyTimeRemaining_
       value: 
       objectReference: {fileID: 476599285}
+    - target: {fileID: 7533284564210608853, guid: 19bf6487b51c8414fa4b6ccfcd95e25a, type: 3}
+      propertyPath: enemyTimeMultiplier_
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 7533284564210608853, guid: 19bf6487b51c8414fa4b6ccfcd95e25a, type: 3}
       propertyPath: fillHealthBarTransform_
       value: 
