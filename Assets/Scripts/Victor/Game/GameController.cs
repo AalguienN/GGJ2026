@@ -94,6 +94,12 @@ public class GameController : MonoBehaviour {
             Receta.Add(Ingredientes[r]);
         }
         ObjetivoActual = Ingredientes[0];
+        InitObjective();
+    }
+
+    public void InitObjective()
+    {
+        PortraitManager.Instance.UpdatePortrait(ObjetivoActual.portrait);
     }
 
     public void NextObjective()
@@ -106,6 +112,7 @@ public class GameController : MonoBehaviour {
         else
         {
             ObjetivoActual = Receta[Completados];
+            InitObjective();
         }
     }
     void YOUWIN()
