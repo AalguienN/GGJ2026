@@ -50,6 +50,7 @@ public class Abductable : MonoBehaviour
             {
                 Destroy(d.gameObject);
             }
+            PlayerMovement.Instance.Abduscan();
         }
         else
         {

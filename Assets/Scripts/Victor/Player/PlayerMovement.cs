@@ -4,10 +4,17 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
 
+    public static PlayerMovement Instance;
     [SerializeField, Range(1.0f, 20000.0f)] private float playerSpeed_;
     private Rigidbody2D playerRB_;
     private Animator animator;
 
+    private void Awake()
+    {
+        if (Instance == null)
+            Instance = this;
+        else Destroy(this);
+    }
     void Start()
     {
 
@@ -46,5 +53,9 @@ public class PlayerMovement : MonoBehaviour
         {
 
         }
+    }
+    public void Abduscan()
+    {
+        animator.SetTrigger("Abduscan");
     }
 }
