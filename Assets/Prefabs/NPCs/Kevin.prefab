@@ -30,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 67.5, y: -31, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2950731150077220997}
@@ -131,8 +131,8 @@ MonoBehaviour:
   navAgent_: {fileID: 0}
   suspiciometer_: {fileID: 0}
   pathEndThreshold: 0.1
-  start_: 0
-  finish_: 0
+  start_: {fileID: 0}
+  finish_: {fileID: 0}
   offsetRadious_: 0.1
 --- !u!195 &8799603146993704733
 NavMeshAgent:
@@ -144,8 +144,8 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 4.475
-  m_Speed: 3.5
-  m_Acceleration: 8
+  m_Speed: 4
+  m_Acceleration: 10
   avoidancePriority: 50
   m_AngularSpeed: 120
   m_StoppingDistance: 0
@@ -182,7 +182,7 @@ Transform:
   m_GameObject: {fileID: 9090472661822832798}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -84.9, y: 2.5999985, z: 0}
+  m_LocalPosition: {x: 0, y: 9, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

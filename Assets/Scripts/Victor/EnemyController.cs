@@ -8,14 +8,14 @@ public class EnemyController : MonoBehaviour {
 
   private NavMeshAgent navAgent_;
   public bool isLeaving_;
+  public bool isIdle_;
 
   void Start(){
     navAgent_ = GetComponent<NavMeshAgent>();
 
-    isLeaving_ =  false;
+    isLeaving_ =  true;
+    isIdle_ = true;
     playerPrefab_ = FindFirstObjectByType<PlayerMovement>();
-    if(null == playerPrefab_)
-      Debug.Log("Player Not Found Biaaach");
   }
 
   void OnEnable() {
@@ -32,7 +32,7 @@ public class EnemyController : MonoBehaviour {
     if(isLeaving_){
       navAgent_.SetDestination(spawnPoint_.position);
       if(AtEndOfPath()){
-        gameObject.SetActive(false);
+        isIdle_ = true;
       }
     }
   }

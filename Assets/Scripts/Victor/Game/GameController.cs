@@ -88,6 +88,7 @@ public class GameController : MonoBehaviour {
 
   public void RefillEnemyBar(){
     enemyController_.isLeaving_ = true;
+    enemyController_.isIdle_ = true;
     enemyTimeRemaining_.sizeDelta = new Vector2(enemyOriginalWidth_, 0.0f);
     enemyWidth_ = enemyOriginalWidth_;
     enemyTimer_.SetActive(false);
@@ -97,18 +98,17 @@ public class GameController : MonoBehaviour {
     if(!isEmpty_ && !isReset_){
       fillHealthBarTransform_.sizeDelta = new Vector2(width - (accumulatedTime_ += Time.deltaTime * timerMultiplier), 70.0f);
       if(fillHealthBarTransform_.sizeDelta.x <= 0.0f){
-        enemyController_.gameObject.SetActive(true);
+        enemyController_.isIdle_ = true;
         isEmpty_ = true;
       }
     }
     if(isEmpty_) {
-      SpawnGuard(true);
-      // RefillMaskBar();
+      SpawnGuard(false);
     }
   }
 
   void EnemyTimer(){
-    if(enemyController_.gameObject.activeInHierarchy){
+    if(!enemyController_.isIdle_){
       if(!enemyController_.isLeaving_){
         enemyTimeRemaining_.sizeDelta = new Vector2(enemyWidth_ -= Time.deltaTime * enemyTimeMultiplier_, 70.0f);
         if(enemyTimeRemaining_.sizeDelta.x <= 0.0f){
@@ -119,8 +119,9 @@ public class GameController : MonoBehaviour {
   }
 
   public void SpawnGuard(bool b){
-    enemyController_.gameObject.SetActive(b);
-    enemyTimer_.SetActive(b);
+    enemyController_.isIdle_ = false;
+    enemyController_.isLeaving_ = false;
+    enemyTimer_.SetActive(true);
   } 
 
     void GenerateReceta()
