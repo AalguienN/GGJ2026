@@ -39,6 +39,7 @@ public class GameController : MonoBehaviour {
 
   private float width = 670.0f;
 
+  public List<Collectable.Type> PreHoldedTypes;
   public List<Collectable.Type> HoldedTypes;
   public List<ObjetivoSO> Ingredientes;
   public List<ObjetivoSO> Receta;

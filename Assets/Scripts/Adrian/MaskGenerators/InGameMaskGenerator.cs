@@ -5,11 +5,17 @@ using UnityEngine;
 
 public class InGameMaskGenerator : MonoBehaviour
 {
+    public static InGameMaskGenerator Instance;
     public MaskUiScr maskUI;
     public Transform maskT;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    private void Awake()
     {
+        if (Instance == null) Instance = this;
+        else Destroy(gameObject);
+    }
+    void Start()
+    {        
         if (maskUI == null) maskUI = GameObject.FindAnyObjectByType<MaskUiScr>();
     }
 
@@ -20,6 +26,15 @@ public class InGameMaskGenerator : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.G))
         {
             Generate();
+        }
+    }
+    public void Remove()
+    {
+        var listOldDragables = transform.GetComponentsInChildren<Draggable>();
+        Debug.Log(listOldDragables.Count());
+        foreach (Draggable d in listOldDragables)
+        {
+            Destroy(d.gameObject);
         }
     }
 
@@ -43,7 +58,6 @@ public class InGameMaskGenerator : MonoBehaviour
             clone.transform.localScale = d.transform.localScale;
             clone.transform.localRotation = d.transform.localRotation;
         }
-
-        GameController.Instance.TryNextObjective();
+        //GameController.Instance.TryNextObjective();
     }
 }

@@ -1,3 +1,5 @@
+using System;
+using System.Linq;
 using UnityEngine;
 
 public class Abductable : MonoBehaviour
@@ -29,15 +31,33 @@ public class Abductable : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (GameController.Instance)
-        {
-            GameController.Instance.TryNextObjective();
-        }
-    } 
-    
+    }
+
     void OnMouseDown()
     {
-
+        Debug.Log("CLICK DETECTADO!");
+        Debug.Log($"{GameController.Instance.ObjetivoActual.GetType()} || {self.GetType()}");
+        InGameMaskGenerator.Instance.Generate();
+        if (self.Name == GameController.Instance.ObjetivoActual.Name)
+        {
+            if (GameController.Instance.IsCorrectMaskCorrect())
+            {
+                GameController.Instance.TryNextObjective();
+                gameObject.SetActive(false);
+            }
+            var listDragables =  InGameMaskGenerator.Instance.transform.parent.GetComponentsInChildren<Draggable>();
+            Debug.Log("---------------");
+            Debug.Log(listDragables.Count());
+            foreach (var d in listDragables)
+            {
+                Debug.Log(d);
+                Destroy(d);
+            }
+        }
+        else
+        {
+            InGameMaskGenerator.Instance.Remove();
+        }
     }
 
     void OnMouseDrag()
