@@ -26,6 +26,7 @@ public class GameController : MonoBehaviour {
   public Zone.ZType CurrentPlayerZone = Zone.ZType.Outside;
   public void UpdateCurrentPlayerZone(Zone.ZType zone)
   {
+        Debug.Log(zone);
         CurrentPlayerZone = zone;
         AudioGod.Instance?.UpdateMusicByZone(zone);
   }
