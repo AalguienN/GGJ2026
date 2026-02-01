@@ -15,8 +15,6 @@ public class Suspiciometer : MonoBehaviour {
     isDetected_ = false;
 
     playerPrefab_ = FindFirstObjectByType<PlayerMovement>();
-    if(null == playerPrefab_)
-      Debug.Log("Player Not Found Biaaach");
   }
 
   void Update(){

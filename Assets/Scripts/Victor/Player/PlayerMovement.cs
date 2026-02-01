@@ -24,8 +24,10 @@ public class PlayerMovement : MonoBehaviour {
   }
 
   void OnTriggerEnter2D(Collider2D other){
-    if(other.tag == "Collectable")
-      Debug.Log("Objetarro");
+    if(other.tag == "Collectable"){
+      
+    }
+
   }
 
 }

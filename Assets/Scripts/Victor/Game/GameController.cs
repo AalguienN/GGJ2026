@@ -17,6 +17,8 @@ public class GameController : MonoBehaviour {
   [SerializeField] private RectTransform enemyTimeRemaining_;
   [SerializeField] private float enemyTimeMultiplier_ = 12.0f;
   [SerializeField] private GameObject enemyTimer_;
+  private float enemyWidth_ = 540.0f;
+  private float enemyOriginalWidth_ = 540.0f;
 
   public float accumulatedTime_;
 
@@ -58,7 +60,7 @@ public class GameController : MonoBehaviour {
 
   void Update() {
     // MaskTimer();
-    // EnemyTimer();
+    EnemyTimer();
 
   }
 
@@ -73,17 +75,21 @@ public class GameController : MonoBehaviour {
 
   void EnemyTimer(){
     if(enemyController_.gameObject.activeInHierarchy){
-      enemyTimer_.SetActive(true);
-      enemyTimeRemaining_.sizeDelta = new Vector2(width -= Time.deltaTime * enemyTimeMultiplier_, 20.0f);
-      if(enemyTimeRemaining_.sizeDelta.x <= 0.0f){
-        enemyController_.gameObject.SetActive(false);
-        enemyTimeRemaining_.sizeDelta = new Vector2(originalWidth, 0.0f);
+      if(!enemyController_.isLeaving_){
+        enemyTimeRemaining_.sizeDelta = new Vector2(enemyWidth_ -= Time.deltaTime * enemyTimeMultiplier_, 20.0f);
+        if(enemyTimeRemaining_.sizeDelta.x <= 0.0f){
+          enemyController_.isLeaving_ = true;
+          enemyTimeRemaining_.sizeDelta = new Vector2(enemyOriginalWidth_, 0.0f);
+          enemyWidth_ = enemyOriginalWidth_;
+          enemyTimer_.SetActive(false);
+        }
       }
     }
   }
 
   public void SpawnGuard(bool b){
     enemyController_.gameObject.SetActive(b);
+    enemyTimer_.SetActive(b);
   } 
 
     void GenerateReceta()

@@ -48,7 +48,6 @@ public class Coletas : NPCBase {
 
     if(task_ == 0){
       task_ = Random.Range(1, 3);
-      Debug.Log("Paras Aqui Puta");
     }
 
     if(task_ == 1)
@@ -123,7 +122,6 @@ public class Coletas : NPCBase {
       itemToPick_.transform.position = new Vector3(transform.position.x, transform.position.y, 0.0f);
       if(Waiting()){
         task_ = 1;
-        Debug.Log("ItemEnMano");
       }
     }
 

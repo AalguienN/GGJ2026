@@ -142,7 +142,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b77f52b238b1f1c459f48dba6cab604d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Karen
-  alertSpeed_: 0
+  alertSpeed_: 1
   frontDoorPosition_: {fileID: 0}
   navAgent_: {fileID: 0}
   suspiciometer_: {fileID: 0}
