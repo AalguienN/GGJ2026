@@ -16,6 +16,10 @@ public class Tutorial : MonoBehaviour
     public TMP_Text textEs;
     public TMP_Text textEn;
 
+    private bool isTyping = false;
+    private Coroutine esCoroutine;
+    private Coroutine enCoroutine;
+
     void Start()
     {
         SetDialog(0);
@@ -33,49 +37,77 @@ public class Tutorial : MonoBehaviour
 
     public void SetDialog(int num)
     {
+        StopAllCoroutines();
+
         if (num < Dialogos.Count)
             currentEs = Dialogos[num];
-        //textEs.text = Dialogos[num];
         if (num < Dialogs.Count)
-            currentEs = Dialogs[num];
-        //textEn.text = Dialogs[num];
-        StartCoroutine(TypeWritterEspanol(1f));
-        StartCoroutine(TypeWritterEnglish(1f));
+            currentEn = Dialogs[num];
+
+        textEs.text = "";
+        textEn.text = "";
+
+        isTyping = true;
+
+        esCoroutine = StartCoroutine(TypeWritterEspanol(1f));
+        enCoroutine = StartCoroutine(TypeWritterEnglish(1f));
 
         CurrentDialog = num;
     }
+
 
     private IEnumerator TypeWriterCorroutine;
 
     IEnumerator TypeWritterEspanol(float waitTime)
     {
-        float timePerletter = waitTime / currentEs.Length;
-        string curr_text = "";
+        float timePerLetter = waitTime / currentEs.Length;
+        string curr = "";
+
         for (int i = 0; i < currentEs.Length; i++)
         {
-            yield return new WaitForSeconds(timePerletter);
-            curr_text += currentEs[i];
-            textEs.text = curr_text;
+            yield return new WaitForSecondsRealtime(timePerLetter);
+            curr += currentEs[i];
+            textEs.text = curr;
         }
     }
 
     IEnumerator TypeWritterEnglish(float waitTime)
     {
-        float timePerletter = waitTime / currentEn.Length;
-        string curr_text = "";
+        float timePerLetter = waitTime / currentEn.Length;
+        string curr = "";
+
         for (int i = 0; i < currentEn.Length; i++)
         {
-            yield return new WaitForSeconds(timePerletter);
-            curr_text += currentEn[i];
-            textEn.text = curr_text;
+            yield return new WaitForSecondsRealtime(timePerLetter);
+            curr += currentEn[i];
+            textEn.text = curr;
         }
+
+        // Cuando ambas acaban
+        isTyping = false;
     }
+
 
     public void NextDialog()
     {
+        if (isTyping)
+        {
+            // Cancelar escritura y mostrar todo
+            StopAllCoroutines();
+            textEs.text = currentEs;
+            textEn.text = currentEn;
+            isTyping = false;
+            return;
+        }
+
         if (CurrentDialog + 1 < Dialogos.Count)
             SetDialog(CurrentDialog + 1);
         else
+        {
+            Time.timeScale = 1.0f;
             Debug.Log("NEXT");
+            gameObject.SetActive(false);
+        }
     }
+
 }
