@@ -26,11 +26,14 @@ public class Karen : NPCBase {
     lockMiniTask_ = false;
   }
  
-  void Update(){
+  void Update() {
     transform.rotation = new Quaternion(0.0f, 0.0f, 0.0f, 0.0f);
-    CallThePolice();
-    Behaviour();
+    if(!suspiciometer_.isDetected_)
+      Behaviour();
+    else
+      CallThePolice();
   }
+
 
   public override void Behaviour() {
     if(currentBehaviour_ == 0)
