@@ -12,14 +12,19 @@ public class GameController : MonoBehaviour {
   [SerializeField] private float timerMultiplier = 2.0f;  
 
   private float originalWidth_;
+  public GameObject menu_;
+  public GameObject gameOverCanvas_;
+  public GameObject winCanvas_;
 
   [SerializeField] private EnemyController enemyController_;
   [SerializeField] private RectTransform enemyTimeRemaining_;
   [SerializeField] private float enemyTimeMultiplier_ = 12.0f;
   [SerializeField] private GameObject enemyTimer_;
-  private float enemyWidth_ = 540.0f;
-  private float enemyOriginalWidth_ = 540.0f;
+  private float enemyWidth_ = 670.0f;
+  private float enemyOriginalWidth_ = 670.0f;
   private bool isEmpty_;
+  private bool isReset_;
+  private bool isInvincible;
 
   public float accumulatedTime_;
 
@@ -32,7 +37,7 @@ public class GameController : MonoBehaviour {
         AudioGod.Instance?.UpdateMusicByZone(zone);
   }
 
-  private float width = 540.0f;
+  private float width = 670.0f;
 
   public List<Collectable.Type> HoldedTypes;
   public List<ObjetivoSO> Ingredientes;
@@ -58,41 +63,56 @@ public class GameController : MonoBehaviour {
         Resources.Load<ObjetivoSO>("ScriptableObjects/ObjetivoTonTorres"), 
     };
     GenerateReceta();
+    menu_.SetActive(true);
   }
 
   void Update() {
     MaskTimer();
     EnemyTimer();
+
+    if(Input.GetButtonDown("Cancel")){
+      if(!menu_.activeInHierarchy){
+        menu_.SetActive(true);
+      }
+      else{
+        menu_.SetActive(false);
+      }
+    }
   }
 
   public void RefillMaskBar(){
     fillHealthBarTransform_.sizeDelta = new Vector2(originalWidth_, 0.0f);
     width = originalWidth_;
+    accumulatedTime_ = 0.0f;
+  }
+
+  public void RefillEnemyBar(){
+    enemyController_.isLeaving_ = true;
+    enemyTimeRemaining_.sizeDelta = new Vector2(enemyOriginalWidth_, 0.0f);
+    enemyWidth_ = enemyOriginalWidth_;
+    enemyTimer_.SetActive(false);
   }
 
   void MaskTimer(){
-    if(!isEmpty_){
-      fillHealthBarTransform_.sizeDelta = new Vector2(width - (accumulatedTime_ += Time.deltaTime * timerMultiplier), 20.0f);
+    if(!isEmpty_ && !isReset_){
+      fillHealthBarTransform_.sizeDelta = new Vector2(width - (accumulatedTime_ += Time.deltaTime * timerMultiplier), 70.0f);
       if(fillHealthBarTransform_.sizeDelta.x <= 0.0f){
         enemyController_.gameObject.SetActive(true);
         isEmpty_ = true;
       }
     }
-    else {
+    if(isEmpty_) {
       SpawnGuard(true);
-      RefillMaskBar();
+      // RefillMaskBar();
     }
   }
 
   void EnemyTimer(){
     if(enemyController_.gameObject.activeInHierarchy){
       if(!enemyController_.isLeaving_){
-        enemyTimeRemaining_.sizeDelta = new Vector2(enemyWidth_ -= Time.deltaTime * enemyTimeMultiplier_, 20.0f);
+        enemyTimeRemaining_.sizeDelta = new Vector2(enemyWidth_ -= Time.deltaTime * enemyTimeMultiplier_, 70.0f);
         if(enemyTimeRemaining_.sizeDelta.x <= 0.0f){
-          enemyController_.isLeaving_ = true;
-          enemyTimeRemaining_.sizeDelta = new Vector2(enemyOriginalWidth_, 0.0f);
-          enemyWidth_ = enemyOriginalWidth_;
-          enemyTimer_.SetActive(false);
+          RefillEnemyBar();
         }
       }
     }
@@ -137,6 +157,11 @@ public class GameController : MonoBehaviour {
     {
         if (IsCorrectMaskCorrect())
         {
+            RefillMaskBar();
+            isReset_ = true;
+            enemyController_.isLeaving_ = true;
+            RefillEnemyBar();
+
             Debug.Log("HELL YEA");
             NextObjective();
         }
@@ -152,11 +177,13 @@ public class GameController : MonoBehaviour {
         {
             ObjetivoActual = Receta[Completados];
             InitObjective();
+            isReset_ = false;
         }
     }
     void YOUWIN()
     {
-        Debug.Log("YOU WIN!");
+      winCanvas_.SetActive(true);
+      Time.timeScale = 0.0f;  
     }
 
 }

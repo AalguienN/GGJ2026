@@ -39,7 +39,8 @@ public class EnemyController : MonoBehaviour {
 
   void OnTriggerEnter2D(Collider2D other){
     if(other.gameObject.GetComponent<PlayerMovement>()){
-      Debug.Log("Abrazo");
+      GameController.Instance.gameOverCanvas_.SetActive(true);
+      Time.timeScale = 0.0f;
     }
   }
 
