@@ -11,7 +11,7 @@ public class GameController : MonoBehaviour {
   [SerializeField] private RectTransform fillHealthBarTransform_;
   [SerializeField] private float timerMultiplier = 2.0f;  
 
-  private float originalWidth;
+  private float originalWidth_;
 
   [SerializeField] private EnemyController enemyController_;
   [SerializeField] private RectTransform enemyTimeRemaining_;
@@ -19,6 +19,7 @@ public class GameController : MonoBehaviour {
   [SerializeField] private GameObject enemyTimer_;
   private float enemyWidth_ = 540.0f;
   private float enemyOriginalWidth_ = 540.0f;
+  private bool isEmpty_;
 
   public float accumulatedTime_;
 
@@ -46,8 +47,8 @@ public class GameController : MonoBehaviour {
     else Destroy(gameObject);
     accumulatedTime_ = 0.0f;
 
-    originalWidth = fillHealthBarTransform_.sizeDelta.x;
-    width = originalWidth;
+    originalWidth_ = fillHealthBarTransform_.sizeDelta.x;
+    width = originalWidth_;
     Ingredientes = new()
     {
         Resources.Load<ObjetivoSO>("ScriptableObjects/ObjetivoKevin"), 
@@ -59,17 +60,26 @@ public class GameController : MonoBehaviour {
   }
 
   void Update() {
-    // MaskTimer();
+    MaskTimer();
     EnemyTimer();
+  }
 
+  public void RefillMaskBar(){
+    fillHealthBarTransform_.sizeDelta = new Vector2(originalWidth_, 0.0f);
+    width = originalWidth_;
   }
 
   void MaskTimer(){
-    if(!enemyController_.gameObject.activeInHierarchy){
+    if(!isEmpty_){
       fillHealthBarTransform_.sizeDelta = new Vector2(width - (accumulatedTime_ += Time.deltaTime * timerMultiplier), 20.0f);
       if(fillHealthBarTransform_.sizeDelta.x <= 0.0f){
         enemyController_.gameObject.SetActive(true);
+        isEmpty_ = true;
       }
+    }
+    else {
+      SpawnGuard(true);
+      RefillMaskBar();
     }
   }
 

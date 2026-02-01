@@ -10,6 +10,9 @@ public class Suspiciometer : MonoBehaviour {
 
   public bool isDetected_;
 
+  public SpriteRenderer spriteRenderer_;
+  public Sprite[] sprites_;
+
   void Start() {
     distanceIncresing_ = 0.0f;
     isDetected_ = false;
@@ -19,28 +22,35 @@ public class Suspiciometer : MonoBehaviour {
 
   void Update(){
     distanceIncresing_ = GameController.Instance.accumulatedTime_ / 54.0f; 
-
   }
 
   void FixedUpdate() {
-    float actualDistance = Vector3.Distance(transform.position, playerPrefab_.transform.position);
-    currentDistance_ = detectionDistance_ + distanceIncresing_;
-    if(actualDistance <= currentDistance_){
-      Vector2 alpha = new Vector2(transform.position.x - playerPrefab_.transform.position.x, 
-                                  transform.position.y - playerPrefab_.transform.position.y);
+    if(!isDetected_){
+      float actualDistance = Vector3.Distance(transform.position, playerPrefab_.transform.position);
+      currentDistance_ = detectionDistance_ + distanceIncresing_;
+      if(actualDistance <= currentDistance_){
+        spriteRenderer_.sprite = sprites_[0];
 
-      float magnitude = alpha.magnitude;
+        Vector2 alpha = new Vector2(transform.position.x - playerPrefab_.transform.position.x, 
+                                    transform.position.y - playerPrefab_.transform.position.y);
 
-      if(magnitude <= currentDistance_ * 0.5f + distanceIncresing_ * 0.5f){
-        isDetected_ = true;
+        float magnitude = alpha.magnitude;
+
+
+        if(magnitude <= currentDistance_ * 0.3f + distanceIncresing_){
+          isDetected_ = true;
+        }
+
       }
-
-
-      // RaycastHit2D hit = Physics2D.Raycast(transform.position, playerPrefab_.transform.position, detectionDistance_);
-      // if(hit.transform.GetComponent<PlayerMovement>()){
-      //   Debug.DrawRay(transform.position, hit.transform.position, Color.yellow);
-      // }
+      else {
+        spriteRenderer_.sprite = sprites_[2];
+      }
     }
+   
+    if(isDetected_) {
+      spriteRenderer_.sprite = sprites_[1];
+    }
+
   }
 
   void OnDrawGizmos() {

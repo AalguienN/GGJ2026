@@ -19,14 +19,12 @@ public class NPCBase : MonoBehaviour {
   }
 
   public void CallThePolice(){
-    // if(suspiciometer_.isDetected_){
-      navAgent_.speed = alertSpeed_;
-      navAgent_.SetDestination(frontDoorPosition_.transform.position);
-      if(AtEndOfPath()){
-        gameController_.SpawnGuard(true);
-        suspiciometer_.isDetected_ = false;
-      }
-    // }
+    navAgent_.speed = alertSpeed_;
+    navAgent_.SetDestination(frontDoorPosition_.transform.position);
+    if(AtEndOfPath()){
+      gameController_.SpawnGuard(true);
+      suspiciometer_.isDetected_ = false;
+    }
   }
 
   public virtual void Behaviour() {}
