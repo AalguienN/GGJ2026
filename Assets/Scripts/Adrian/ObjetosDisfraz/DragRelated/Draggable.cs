@@ -31,7 +31,7 @@ public class Draggable : MonoBehaviour
     private void Update()
     {
         selectableHalo?.SetActive(Selectable && !YEYIAMDRAGGEDTHISFRAME);
-        if (!YEYIAMDRAGGEDTHISFRAME && WillBeMadeUnselectable)
+        if (!YEYIAMDRAGGEDTHISFRAME && WillBeMadeUnselectable && transform.parent == null)
         {
             Selectable = false;
             WillBeMadeUnselectable = false;
