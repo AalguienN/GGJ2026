@@ -1,12 +1,12 @@
 fileFormatVersion: 2
-guid: 5e4e1618ebfdb1f4e8923e5b85b33333
+guid: 9ddac674ab1f50045aa39ad982a64c67
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 0
+    enableMipMap: 1
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -37,8 +37,8 @@ TextureImporter:
     filterMode: 1
     aniso: 1
     mipBias: 0
-    wrapU: 1
-    wrapV: 1
+    wrapU: 0
+    wrapV: 0
     wrapW: 0
   nPOTScale: 0
   lightmap: 0
@@ -52,7 +52,7 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 1
+  alphaIsTransparency: 0
   spriteTessellationDetail: -1
   textureType: 8
   textureShape: 1
@@ -97,133 +97,133 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "Se\xF1or_0"
+      name: PeliAzul_0
       rect:
         serializedVersion: 2
-        x: 184
+        x: 91
         y: 1444
-        width: 736
-        height: 956
+        width: 902
+        height: 1071
       alignment: 9
-      pivot: {x: 0.4774388, y: 0.013658978}
+      pivot: {x: 0.47054532, y: 0.0069642765}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 81949257ba95fd94b9734664f5e9e2b5
-      internalID: 320167459
+      spriteID: c21043bcd4f74a247bab28a4002befef
+      internalID: -1697039614
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "Se\xF1or_1"
+      name: PeliAzul_1
       rect:
         serializedVersion: 2
-        x: 1260
+        x: 1170
         y: 1444
-        width: 725
-        height: 940
+        width: 897
+        height: 1054
       alignment: 9
-      pivot: {x: 0.48167717, y: 0.0053809634}
+      pivot: {x: 0.4629765, y: 0.0053138807}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 92259d0697cdb90499d2ccf3ab039905
-      internalID: -182090981
+      spriteID: d5a9b797d761e14449f4a671fd4ceb30
+      internalID: -1362841153
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "Se\xF1or_2"
+      name: PeliAzul_2
       rect:
         serializedVersion: 2
-        x: 2503
-        y: 1445
-        width: 735
-        height: 958
+        x: 2420
+        y: 1447
+        width: 892
+        height: 1073
       alignment: 9
-      pivot: {x: 0.40059558, y: 0.014674432}
+      pivot: {x: 0.4218148, y: 0.001693171}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0956880ff6f88c143877523bcea5a4b8
-      internalID: 1885526940
+      spriteID: 56ee4765a9ad9b244bd2626d6b50d1ca
+      internalID: 2009167225
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "Se\xF1or_3"
+      name: PeliAzul_3
       rect:
         serializedVersion: 2
-        x: 3532
+        x: 3439
         y: 1449
-        width: 736
-        height: 951
-      alignment: 9
-      pivot: {x: 0.48646313, y: 0.0041179154}
+        width: 903
+        height: 1066
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 627a76390746e9e4e89f85ec5d35f2a2
-      internalID: 941331005
+      spriteID: 605982563c7546f4e8cee73e62751223
+      internalID: -1181366179
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "Se\xF1or_4"
+      name: PeliAzul_4
       rect:
         serializedVersion: 2
-        x: 4609
-        y: 1449
-        width: 724
-        height: 932
+        x: 4519
+        y: 1446
+        width: 896
+        height: 1052
       alignment: 9
-      pivot: {x: 0.49082652, y: 0.00469879}
+      pivot: {x: 0.4888807, y: 0.01068707}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f9f937bc631ad8b45b766d9713a3c27f
-      internalID: 2003392629
+      spriteID: c19cde0eb0cb6b046b378fc9e587c465
+      internalID: 1116443767
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "Se\xF1or_5"
+      name: PeliAzul_5
       rect:
         serializedVersion: 2
-        x: 269
-        y: 100
-        width: 737
-        height: 956
+        x: 190
+        y: 103
+        width: 893
+        height: 1071
       alignment: 9
-      pivot: {x: 0.41888982, y: 0.013659074}
+      pivot: {x: 0.41446438, y: 0.01316587}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f29172eb2af0a7a4ca3fb73bc021f923
-      internalID: 1522806113
+      spriteID: 7714fe38182e74f46b2e312dab900233
+      internalID: -518303458
       vertices: []
       indices: 
       edges: []
@@ -232,7 +232,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: e353e3885eb627e429c2b26eb63aebb0
+    spriteID: d72e33ab65da1294e8f9b41c608a3eec
     internalID: 0
     vertices: []
     indices: 
@@ -244,12 +244,12 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      "Se\xF1or_0": 320167459
-      "Se\xF1or_1": -182090981
-      "Se\xF1or_2": 1885526940
-      "Se\xF1or_3": 941331005
-      "Se\xF1or_4": 2003392629
-      "Se\xF1or_5": 1522806113
+      PeliAzul_0: -1697039614
+      PeliAzul_1: -1362841153
+      PeliAzul_2: 2009167225
+      PeliAzul_3: -1181366179
+      PeliAzul_4: 1116443767
+      PeliAzul_5: -518303458
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

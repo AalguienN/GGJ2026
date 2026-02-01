@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Linq;
 using UnityEngine;
 
@@ -32,6 +33,7 @@ public class Abductable : MonoBehaviour
     void Update()
     {
     }
+    private Coroutine corr;
 
     void OnMouseDown()
     {
@@ -43,21 +45,27 @@ public class Abductable : MonoBehaviour
             if (GameController.Instance.IsCorrectMaskCorrect())
             {
                 GameController.Instance.TryNextObjective();
-                gameObject.SetActive(false);
+                PlayerMovement.Instance.Abduscan();
+                //gameObject.SetActive(false);
+                corr = StartCoroutine(DeleteIE(1f));
             }
             var listDragables =  MaskUiScr.Instance.transform.parent.GetComponentsInChildren<Draggable>();
             foreach (var d in listDragables)
             {
                 Destroy(d.gameObject);
             }
-            PlayerMovement.Instance.Abduscan();
         }
         else
         {
             InGameMaskGenerator.Instance.Remove();
         }
     }
-
+    IEnumerator aaaaaaaaaa;
+    IEnumerator DeleteIE(float waitTime)
+    {
+        yield return new WaitForSeconds(waitTime);
+        gameObject.SetActive(false);
+    }
     void OnMouseDrag()
     {
         

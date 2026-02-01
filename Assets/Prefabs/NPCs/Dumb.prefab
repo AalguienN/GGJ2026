@@ -249,7 +249,7 @@ MonoBehaviour:
   pathEndThreshold: 0.1
   pathList_: []
   listLength_: 6
-  radius_: 7
+  radius_: 12
 --- !u!70 &727556836125162549
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
