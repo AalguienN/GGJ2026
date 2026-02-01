@@ -166,8 +166,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4289999872
+  m_fontColor: {r: 0, g: 0.20220971, b: 0.7056604, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -511,8 +511,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4278190262
+  m_fontColor: {r: 0.7132075, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -793,14 +793,37 @@ MonoBehaviour:
     objetivo. As\xED hasta completar la lista \xA1Recuerda que tu disfraz no es eterno
     y se va desgastando con el uso! As\xED que pasa de un objetivo a otro en el menor
     tiempo posible."
+  - "\xA1Recuerda que tu disfraz no es eterno y se va desgastando con el uso! As\xED
+    que pasa de un objetivo a otro en el menor tiempo posible. "
   - "Sobre todo EVITA cruzarte en la mirada del llamado \u201CGuardia\u201D seg\xFAn
     nuestros informes es de los humanos m\xE1s inteligentes e identifica a los aliens
-    con m\xE1s facilidad."
+    con m\xE1s facilidad. "
   - "Si los humanos empiezan a sospechar de tu disfraz les aparecer\xE1 \u201C?\u201D
     Sobre la cabeza, al\xE9jate porque sino llamar\xE1n al guardia."
   - 'BUENA SUERTE SOLDADO ALEJANDO MARCIANO '
   Dialogs:
-  - 
+  - 'MISSION 345: Infiltrate into a human social event called "Kevin''s house party" '
+  - 'Try to abduct as many humans as possible without getting caught! '
+  - 'To do this, move using the keys w, a, s, t. And follow these instructions: '
+  - 'First, we''ve provided you with a list of human targets to abduct, so you can
+    distinguish them from the rest of the humans (because let''s be honest, they''re
+    all the same). You''ll always have your assigned target in the bottom left corner
+    of your screen. '
+  - '2nd look for objects at the party that can disguise you as the human on the
+    list, to do this once you have found the object around the house drag it onto
+    the lower panel with your face trying to make it look as similar as possible
+    to the original. '
+  - 'Third, once you have the disguise, locate the human and click on them to abduct
+    them. Your new target will appear in the bottom corner. Repeat this process until
+    you complete the list. '
+  - 'Remember that your costume isn''t permanent and will falls  with use! So move
+    from one objective to another as quickly as possible. '
+  - 'Above all, AVOID making eye contact with the so-called "Guard"; according to
+    our reports, he is one of the most intelligent humans and identifies aliens more
+    easily. '
+  - 'If humans start to suspect your disguise, a "?" will appear above their head;
+    move away or they will call the guard. '
+  - 'GOOD LUCK SOLDIER ALEJANDRO MARCIANO '
   textEs: {fileID: 1439488480}
   textEn: {fileID: 322823590}
 --- !u!1 &1994735478

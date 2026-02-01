@@ -39,6 +39,8 @@ public class Tutorial : MonoBehaviour
         if (num < Dialogs.Count)
             currentEs = Dialogs[num];
         //textEn.text = Dialogs[num];
+        StartCoroutine(TypeWritterEspanol(1f));
+        StartCoroutine(TypeWritterEnglish(1f));
 
         CurrentDialog = num;
     }
@@ -52,12 +54,22 @@ public class Tutorial : MonoBehaviour
         for (int i = 0; i < currentEs.Length; i++)
         {
             yield return new WaitForSeconds(timePerletter);
-
-            
+            curr_text += currentEs[i];
+            textEs.text = curr_text;
         }
-        print("WaitAndPrint " + Time.time);
     }
 
+    IEnumerator TypeWritterEnglish(float waitTime)
+    {
+        float timePerletter = waitTime / currentEn.Length;
+        string curr_text = "";
+        for (int i = 0; i < currentEn.Length; i++)
+        {
+            yield return new WaitForSeconds(timePerletter);
+            curr_text += currentEn[i];
+            textEn.text = curr_text;
+        }
+    }
 
     public void NextDialog()
     {
