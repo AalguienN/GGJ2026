@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEditor.Animations;
 
 public class EnemyController : MonoBehaviour {
 
@@ -10,8 +11,11 @@ public class EnemyController : MonoBehaviour {
   public bool isLeaving_;
   public bool isIdle_;
 
+  private Animator animator_;
+
   void Start(){
     navAgent_ = GetComponent<NavMeshAgent>();
+    animator_ = GetComponent<Animator>();
 
     isLeaving_ =  true;
     isIdle_ = true;
@@ -35,6 +39,7 @@ public class EnemyController : MonoBehaviour {
         isIdle_ = true;
       }
     }
+    animator_.SetBool("IsIdle", isIdle_);
   }
 
   void OnTriggerEnter2D(Collider2D other){

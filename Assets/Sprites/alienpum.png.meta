@@ -108,12 +108,936 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: alienpum_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6740
+        width: 1733
+        height: 1348
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65ef80046619ada4b9c90afa4e0f8f44
+      internalID: -1294394621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alienpum_1
+      rect:
+        serializedVersion: 2
+        x: 1733
+        y: 6740
+        width: 1733
+        height: 1348
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e30b0b8a0b6b2e546a169232347cea39
+      internalID: -2077317477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alienpum_2
+      rect:
+        serializedVersion: 2
+        x: 3466
+        y: 6740
+        width: 1733
+        height: 1348
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cac16505fd817564fb155dbb7ab81393
+      internalID: 2104571775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alienpum_3
+      rect:
+        serializedVersion: 2
+        x: 5199
+        y: 6740
+        width: 1733
+        height: 1348
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac6363dd07bfc5f429d545fa071d60b2
+      internalID: -255485880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alienpum_4
+      rect:
+        serializedVersion: 2
+        x: 6932
+        y: 6740
+        width: 1733
+        height: 1348
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb84fce821863b0428e5410259c19c5d
+      internalID: -872694533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alienpum_5
+      rect:
+        serializedVersion: 2
+        x: 8665
+        y: 6740
+        width: 1733
+        height: 1348
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6eb3665aed1ec3e439d0af0a8d51b3b6
+      internalID: -2063372897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alienpum_6
+      rect:
+        serializedVersion: 2
+        x: 10398
+        y: 6740
+        width: 1733
+        height: 1348
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38fc5e038f5940746b9ed8bb0b521214
+      internalID: -469804015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alienpum_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5392
+        width: 1733
+        height: 1348
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9f8b2af90a0fea4e9861e51f7fcd258
+      internalID: 919820876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alienpum_8
+      rect:
+        serializedVersion: 2
+        x: 1733
+        y: 5392
+        width: 1733
+        height: 1348
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 594b91a75d870a04cbf705855e8d4c2a
+      internalID: -1955967923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alienpum_9
+      rect:
+        serializedVersion: 2
+        x: 3466
+        y: 5392
+        width: 1733
+        height: 1348
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae4d063da03b469439c22d4e2d1c2336
+      internalID: 1847994573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alienpum_10
+      rect:
+        serializedVersion: 2
+        x: 5199
+        y: 5392
+        width: 1733
+        height: 1348
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be0fb83585566c74e827c33c689a3265
+      internalID: 1892560903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alienpum_11
+      rect:
+        serializedVersion: 2
+        x: 6932
+        y: 5392
+        width: 1733
+        height: 1348
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1a8f7669a1ce6a4486c143ef1c6e400
+      internalID: -735046047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alienpum_12
+      rect:
+        serializedVersion: 2
+        x: 8665
+        y: 5392
+        width: 1733
+        height: 1348
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb4f4eebbf6c5484ba2e37a042c0c920
+      internalID: 741019907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alienpum_13
+      rect:
+        serializedVersion: 2
+        x: 10398
+        y: 5392
+        width: 1733
+        height: 1348
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34f758a4f07f3bd458194c3a5199627c
+      internalID: -1404879492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alienpum_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4044
+        width: 1733
+        height: 1348
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b56465bee713aba48a84c91992545cb4
+      internalID: 405415080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alienpum_15
+      rect:
+        serializedVersion: 2
+        x: 1733
+        y: 4044
+        width: 1733
+        height: 1348
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5992840ee152d042a7d6563a9cbd073
+      internalID: -1873886327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alienpum_16
+      rect:
+        serializedVersion: 2
+        x: 3466
+        y: 4044
+        width: 1733
+        height: 1348
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a4b73405634ce24680eaaa411129ac0
+      internalID: 172989522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alienpum_17
+      rect:
+        serializedVersion: 2
+        x: 5199
+        y: 4044
+        width: 1733
+        height: 1348
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21643460423dbf24ea714da627ecb7ba
+      internalID: 561164938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alienpum_18
+      rect:
+        serializedVersion: 2
+        x: 6932
+        y: 4044
+        width: 1733
+        height: 1348
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5af15d8db1e81a74ca93597490fa6f2a
+      internalID: -534895729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alienpum_19
+      rect:
+        serializedVersion: 2
+        x: 8665
+        y: 4044
+        width: 1733
+        height: 1348
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 820ba5669c5a7054fb90653da4c7f894
+      internalID: 583430656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alienpum_20
+      rect:
+        serializedVersion: 2
+        x: 10398
+        y: 4044
+        width: 1733
+        height: 1348
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cadb9a303d9010458db12b1f1814016
+      internalID: 1818933639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alienpum_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2696
+        width: 1733
+        height: 1348
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a2e5302e40a4cd43adf9cbf6dc605d5
+      internalID: 1224084610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alienpum_22
+      rect:
+        serializedVersion: 2
+        x: 1733
+        y: 2696
+        width: 1733
+        height: 1348
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 310092d8db871f34f9049f744cb357e8
+      internalID: -1746070659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alienpum_23
+      rect:
+        serializedVersion: 2
+        x: 3466
+        y: 2696
+        width: 1733
+        height: 1348
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c4e290c4e3a6de46821d02f94dfacc4
+      internalID: 69002980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alienpum_24
+      rect:
+        serializedVersion: 2
+        x: 5199
+        y: 2696
+        width: 1733
+        height: 1348
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db630c8b9d12b3343b65d68832b19f13
+      internalID: -500590476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alienpum_25
+      rect:
+        serializedVersion: 2
+        x: 6932
+        y: 2696
+        width: 1733
+        height: 1348
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 371f2f7651017f84b807d26af6adf171
+      internalID: -490339470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alienpum_26
+      rect:
+        serializedVersion: 2
+        x: 8665
+        y: 2696
+        width: 1733
+        height: 1348
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36da675c6f7499d47b3cbecbde34728b
+      internalID: -1211445521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alienpum_27
+      rect:
+        serializedVersion: 2
+        x: 10398
+        y: 2696
+        width: 1733
+        height: 1348
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9f4a20920a110a4fa7f88b2c12541e1
+      internalID: -2096742993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alienpum_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1348
+        width: 1733
+        height: 1348
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d1ef3405119e154db81044eebb142a6
+      internalID: -1808957324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alienpum_29
+      rect:
+        serializedVersion: 2
+        x: 1733
+        y: 1348
+        width: 1733
+        height: 1348
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ed20a9717a425d40bdb1a7720703892
+      internalID: -406544501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alienpum_30
+      rect:
+        serializedVersion: 2
+        x: 3466
+        y: 1348
+        width: 1733
+        height: 1348
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a29ab90e12ad8f0429f0e2a36396ada7
+      internalID: -716219385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alienpum_31
+      rect:
+        serializedVersion: 2
+        x: 5199
+        y: 1348
+        width: 1733
+        height: 1348
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 844a9b825356db144b0bff403d162878
+      internalID: -854443206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alienpum_32
+      rect:
+        serializedVersion: 2
+        x: 6932
+        y: 1348
+        width: 1733
+        height: 1348
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ad7482304464c644b49c6936d48b863
+      internalID: 923225638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alienpum_33
+      rect:
+        serializedVersion: 2
+        x: 8665
+        y: 1348
+        width: 1733
+        height: 1348
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2a79d626faffb445a11b07d29a72b41
+      internalID: -529564788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alienpum_34
+      rect:
+        serializedVersion: 2
+        x: 10398
+        y: 1348
+        width: 1733
+        height: 1348
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4e7245512d0d5a48b05d8a97b8ba8d4
+      internalID: 1663479172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alienpum_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1733
+        height: 1348
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef7865b3739a575408aaaa6444da5c5f
+      internalID: 629629757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alienpum_36
+      rect:
+        serializedVersion: 2
+        x: 1733
+        y: 0
+        width: 1733
+        height: 1348
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de7e39830cdafe34daddbee1f2ee9d99
+      internalID: -776919401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alienpum_37
+      rect:
+        serializedVersion: 2
+        x: 3466
+        y: 0
+        width: 1733
+        height: 1348
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2f0a54fed525be4f835222e09410e3a
+      internalID: 1232491383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alienpum_38
+      rect:
+        serializedVersion: 2
+        x: 5199
+        y: 0
+        width: 1733
+        height: 1348
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 682b0a8714a757440b4c34ec0f1c9c84
+      internalID: 633557927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alienpum_39
+      rect:
+        serializedVersion: 2
+        x: 6932
+        y: 0
+        width: 1733
+        height: 1348
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efe7da3174040124b8d13c7cb69471a7
+      internalID: 45108869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alienpum_40
+      rect:
+        serializedVersion: 2
+        x: 8665
+        y: 0
+        width: 1733
+        height: 1348
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cde8d551f387cba4cadad63afe3a260a
+      internalID: -1552614544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alienpum_41
+      rect:
+        serializedVersion: 2
+        x: 10398
+        y: 0
+        width: 1733
+        height: 1348
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5db22a46b0a69d24f8071c8d1be22ea7
+      internalID: 159275080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 6c2bc596d16a73d4cb344e264ba23fbf
     internalID: 0
     vertices: []
     indices: 
@@ -121,8 +1045,52 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
-    nameFileIdTable: {}
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":7.0,"y":6.0},"gridSpriteSize":{"x":1733.0,"y":1348.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      alienpum_0: -1294394621
+      alienpum_1: -2077317477
+      alienpum_10: 1892560903
+      alienpum_11: -735046047
+      alienpum_12: 741019907
+      alienpum_13: -1404879492
+      alienpum_14: 405415080
+      alienpum_15: -1873886327
+      alienpum_16: 172989522
+      alienpum_17: 561164938
+      alienpum_18: -534895729
+      alienpum_19: 583430656
+      alienpum_2: 2104571775
+      alienpum_20: 1818933639
+      alienpum_21: 1224084610
+      alienpum_22: -1746070659
+      alienpum_23: 69002980
+      alienpum_24: -500590476
+      alienpum_25: -490339470
+      alienpum_26: -1211445521
+      alienpum_27: -2096742993
+      alienpum_28: -1808957324
+      alienpum_29: -406544501
+      alienpum_3: -255485880
+      alienpum_30: -716219385
+      alienpum_31: -854443206
+      alienpum_32: 923225638
+      alienpum_33: -529564788
+      alienpum_34: 1663479172
+      alienpum_35: 629629757
+      alienpum_36: -776919401
+      alienpum_37: 1232491383
+      alienpum_38: 633557927
+      alienpum_39: 45108869
+      alienpum_4: -872694533
+      alienpum_40: -1552614544
+      alienpum_41: 159275080
+      alienpum_5: -2063372897
+      alienpum_6: -469804015
+      alienpum_7: 919820876
+      alienpum_8: -1955967923
+      alienpum_9: 1847994573
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
