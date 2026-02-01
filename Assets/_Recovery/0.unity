@@ -2118,10 +2118,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: MasckHolder
       objectReference: {fileID: 0}
-    - target: {fileID: 7151988785229600567, guid: 17cf142e135ce3a40a7a73636f646328, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7412898943788089069, guid: 17cf142e135ce3a40a7a73636f646328, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

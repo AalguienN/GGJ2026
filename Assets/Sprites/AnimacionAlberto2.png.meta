@@ -95,12 +95,188 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: AnimacionAlberto2_0
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 1381
+        width: 785
+        height: 1008
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 763cf6361719ce141b7999e5e25e0dc9
+      internalID: -2026722567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimacionAlberto2_1
+      rect:
+        serializedVersion: 2
+        x: 1227
+        y: 1383
+        width: 782
+        height: 1009
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9a890b0d98a9124ebc682182283f55b
+      internalID: -281606193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimacionAlberto2_2
+      rect:
+        serializedVersion: 2
+        x: 2345
+        y: 1384
+        width: 784
+        height: 1006
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1cb68790400e89498efdc9f43ba5f8c
+      internalID: 36916659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimacionAlberto2_3
+      rect:
+        serializedVersion: 2
+        x: 3457
+        y: 1381
+        width: 784
+        height: 1003
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 212cd16ed5f65354fba0a3fe58be7433
+      internalID: 2145387873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimacionAlberto2_4
+      rect:
+        serializedVersion: 2
+        x: 4576
+        y: 1381
+        width: 784
+        height: 997
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b067890d6f027d4fbf65109ad28856e
+      internalID: -1601367886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimacionAlberto2_5
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 34
+        width: 779
+        height: 989
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 161032a632d5e624a955734cd2880a71
+      internalID: -1972519343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimacionAlberto2_6
+      rect:
+        serializedVersion: 2
+        x: 1227
+        y: 40
+        width: 785
+        height: 989
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b67c61f9fb25a7c4ba2afbaaf1edf64d
+      internalID: -511128608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimacionAlberto2_7
+      rect:
+        serializedVersion: 2
+        x: 2347
+        y: 35
+        width: 782
+        height: 1000
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c90be21003d29ed4e84b560751714765
+      internalID: 357739311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: c4dfebdaa6235614d9ea1486147747a0
     internalID: 0
     vertices: []
     indices: 
@@ -108,8 +284,18 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
-    nameFileIdTable: {}
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      AnimacionAlberto2_0: -2026722567
+      AnimacionAlberto2_1: -281606193
+      AnimacionAlberto2_2: 36916659
+      AnimacionAlberto2_3: 2145387873
+      AnimacionAlberto2_4: -1601367886
+      AnimacionAlberto2_5: -1972519343
+      AnimacionAlberto2_6: -511128608
+      AnimacionAlberto2_7: 357739311
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
