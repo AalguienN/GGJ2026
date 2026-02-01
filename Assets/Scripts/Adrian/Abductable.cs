@@ -31,7 +31,7 @@ public class Abductable : MonoBehaviour
     {
         if (GameController.Instance)
         {
-            
+            GameController.Instance.TryNextObjective();
         }
     } 
     
