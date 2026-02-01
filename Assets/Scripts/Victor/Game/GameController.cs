@@ -1,5 +1,6 @@
 using NUnit.Framework;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -23,10 +24,11 @@ public class GameController : MonoBehaviour {
 
   private float width = 540.0f;
 
+  public List<Collectable.Type> HoldedTypes;
   public List<ObjetivoSO> Ingredientes;
   public List<ObjetivoSO> Receta;
-    public int Completados = 0;
-    public ObjetivoSO ObjetivoActual;
+  public int Completados = 0;
+  public ObjetivoSO ObjetivoActual;
 
   void Start() {
     if (Instance == null)
@@ -94,8 +96,23 @@ public class GameController : MonoBehaviour {
             Receta.Add(Ingredientes[r]);
         }
         ObjetivoActual = Ingredientes[0];
+        InitObjective();
     }
 
+    public void InitObjective()
+    {
+        PortraitManager.Instance.UpdatePortrait(ObjetivoActual.portrait);
+    }
+
+    public void TryNextObjective()
+    {
+        if (HoldedTypes.Count == ObjetivoActual.RequiredObjects.Count &&
+            HoldedTypes.ToHashSet().SetEquals(ObjetivoActual.RequiredObjects.ToHashSet()))
+        {
+            Debug.Log("HELL YEA");
+            NextObjective();
+        }
+    }
     public void NextObjective()
     {
         Completados++;
@@ -106,6 +123,7 @@ public class GameController : MonoBehaviour {
         else
         {
             ObjetivoActual = Receta[Completados];
+            InitObjective();
         }
     }
     void YOUWIN()

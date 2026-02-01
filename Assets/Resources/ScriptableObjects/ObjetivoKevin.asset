@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ObjetivoSO
   Name: Kevin
   RequiredObjects: 03000000
-  portrait: {fileID: 0}
+  portrait: {fileID: -1600009586, guid: 0666f7789b6c62144a7d5fdadf571b1b, type: 3}

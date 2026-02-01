@@ -42,5 +42,7 @@ public class InGameMaskGenerator : MonoBehaviour
             clone.transform.localScale = d.transform.localScale;
             clone.transform.localRotation = d.transform.localRotation;
         }
+
+        GameController.Instance.TryNextObjective();
     }
 }

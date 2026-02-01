@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Collectable : MonoBehaviour
 {
-    public enum Type { none, peine, galleta, gato, eleftante_juguete, cazo, bicho, flor }
+    public enum Type { none, peine, galleta, gato, eleftante_juguete, cazo, bicho, alfombra }
 
     public Type type = Collectable.Type.none;
     private Animator animator;
@@ -31,7 +31,7 @@ public class Collectable : MonoBehaviour
             case Type.bicho:
                 animator.SetTrigger("arana");
                 break;
-            case Type.flor:
+            case Type.alfombra:
                 animator.SetTrigger("alfombra");
                 break;
         }
