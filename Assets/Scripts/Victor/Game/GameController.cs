@@ -27,6 +27,7 @@ public class GameController : MonoBehaviour {
   public Zone.ZType CurrentPlayerZone = Zone.ZType.Outside;
   public void UpdateCurrentPlayerZone(Zone.ZType zone)
   {
+        Debug.Log(zone);
         CurrentPlayerZone = zone;
         AudioGod.Instance?.UpdateMusicByZone(zone);
   }
@@ -126,10 +127,15 @@ public class GameController : MonoBehaviour {
         PortraitManager.Instance.UpdatePortrait(ObjetivoActual.portrait);
     }
 
+    public bool IsCorrectMaskCorrect() {
+
+        return HoldedTypes.Count == ObjetivoActual.RequiredObjects.Count &&
+            HoldedTypes.ToHashSet().SetEquals(ObjetivoActual.RequiredObjects.ToHashSet());
+    }
+
     public void TryNextObjective()
     {
-        if (HoldedTypes.Count == ObjetivoActual.RequiredObjects.Count &&
-            HoldedTypes.ToHashSet().SetEquals(ObjetivoActual.RequiredObjects.ToHashSet()))
+        if (IsCorrectMaskCorrect())
         {
             Debug.Log("HELL YEA");
             NextObjective();

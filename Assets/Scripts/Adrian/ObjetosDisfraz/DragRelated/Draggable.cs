@@ -30,8 +30,8 @@ public class Draggable : MonoBehaviour
 
     private void Update()
     {
-        selectableHalo?.SetActive(Selectable && !YEYIAMDRAGGEDTHISFRAME);
-        if (!YEYIAMDRAGGEDTHISFRAME && WillBeMadeUnselectable && transform.parent == null)
+        selectableHalo?.SetActive(Selectable && !YEYIAMDRAGGEDTHISFRAME && transform.parent == null);
+        if (!YEYIAMDRAGGEDTHISFRAME && WillBeMadeUnselectable)
         {
             Selectable = false;
             WillBeMadeUnselectable = false;
@@ -40,7 +40,7 @@ public class Draggable : MonoBehaviour
 
     void OnMouseDown()
     {
-        if (!Selectable) return;
+        if (!Selectable && transform.parent == null) return;
         dragPlane = new Plane(myMainCamera.transform.forward, transform.position);
         Ray camRay = myMainCamera.ScreenPointToRay(Input.mousePosition);
         YEYIAMDRAGGEDTHISFRAME = true;
@@ -56,7 +56,7 @@ public class Draggable : MonoBehaviour
 
     void OnMouseDrag()
     {
-        if (!Selectable) return;
+        if (!Selectable && transform.parent == null) return;
         dragPlane = new Plane(myMainCamera.transform.forward, transform.position);
 
         Ray camRay = myMainCamera.ScreenPointToRay(Input.mousePosition);
