@@ -20,7 +20,13 @@ public class GameController : MonoBehaviour {
 
   public float accumulatedTime_;
 
-  public static Zone.ZType CurrentPlayerZone = Zone.ZType.Outside;
+  [Header("AQUI? ESTOY LOCO?")]
+  public Zone.ZType CurrentPlayerZone = Zone.ZType.Outside;
+  public void UpdateCurrentPlayerZone(Zone.ZType zone)
+  {
+        CurrentPlayerZone = zone;
+        AudioGod.Instance?.UpdateMusicByZone(zone);
+  }
 
   private float width = 540.0f;
 
