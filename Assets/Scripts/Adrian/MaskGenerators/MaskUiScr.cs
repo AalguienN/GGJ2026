@@ -25,14 +25,13 @@ public class MaskUiScr : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         collision.gameObject.TryGetComponent<Draggable>(out Draggable dragable);
-        if (dragable != null && InteractUiScaler.Instance?.Interacting == InteractUiScaler.Interaction.Dragging)
+        Debug.Log("ENTEEER");
+        if (dragable != null && InteractUiScaler.Instance?.Interacting == InteractUiScaler.Interaction.Dragging && dragable.YEYIAMDRAGGEDTHISFRAME)
         {
             Debug.Log($"{dragable.gameObject.name}");
-            dragable.gameObject.transform.parent = this.transform.parent;
-            GameController.Instance.HoldedTypes = new();
-            HashSet<Collectable> typesHas;
-            List<Collectable> types = GetComponentsInChildren<Collectable>().ToList();
 
+            dragable.gameObject.transform.parent = this.transform.parent;
+            RefreshCollectables();
         }
     }    
     private void OnTriggerExit2D(Collider2D collision)
@@ -42,6 +41,18 @@ public class MaskUiScr : MonoBehaviour
         {
             dragable.gameObject.transform.parent = null;
             dragable.gameObject.transform.localScale = Vector3.one;
+            RefreshCollectables();
         }
+    }
+
+    private void RefreshCollectables()
+    {
+        HashSet<Collectable.Type> typesHash = new();
+        List<Collectable> types = transform.parent.gameObject.GetComponentsInChildren<Collectable>().ToList();
+        Debug.Log(types.Count);
+        foreach (var t in types)
+            typesHash.Add(t.type);
+
+        GameController.Instance.HoldedTypes = typesHash.ToList();
     }
 }

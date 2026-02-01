@@ -1,5 +1,6 @@
 using NUnit.Framework;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -103,6 +104,15 @@ public class GameController : MonoBehaviour {
         PortraitManager.Instance.UpdatePortrait(ObjetivoActual.portrait);
     }
 
+    public void TryNextObjective()
+    {
+        if (HoldedTypes.Count == ObjetivoActual.RequiredObjects.Count &&
+            HoldedTypes.ToHashSet().SetEquals(ObjetivoActual.RequiredObjects.ToHashSet()))
+        {
+            Debug.Log("HELL YEA");
+            NextObjective();
+        }
+    }
     public void NextObjective()
     {
         Completados++;

@@ -13,16 +13,19 @@ public class Draggable : MonoBehaviour
 
     private Camera myMainCamera;
 
+    public bool YEYIAMDRAGGEDTHISFRAME;
 
     void Start()
     {
         myMainCamera = Camera.main; // Camera.main is expensive ; cache it here
+        YEYIAMDRAGGEDTHISFRAME = false;
     }
 
     void OnMouseDown()
     {
         dragPlane = new Plane(myMainCamera.transform.forward, transform.position);
         Ray camRay = myMainCamera.ScreenPointToRay(Input.mousePosition);
+        YEYIAMDRAGGEDTHISFRAME = true;
 
         float planeDist;
         LayerMask layerMask = LayerMask.GetMask(new string[] { "Draggable" });
@@ -40,12 +43,14 @@ public class Draggable : MonoBehaviour
         Ray camRay = myMainCamera.ScreenPointToRay(Input.mousePosition);
         if (dragPlane.Raycast(camRay, out float planeDist))
         {
+            YEYIAMDRAGGEDTHISFRAME = true;
             transform.position = camRay.GetPoint(planeDist) + offset;
         }
     }
 
     private void OnMouseUp()
     {
+        YEYIAMDRAGGEDTHISFRAME = false;
         InteractUiScaler.Instance.Interacting = InteractUiScaler.Interaction.NoInteraction;
     }
 }
