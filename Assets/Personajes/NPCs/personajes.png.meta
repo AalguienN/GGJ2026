@@ -228,7 +228,7 @@ TextureImporter:
         width: 895
         height: 1210
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -237,6 +237,28 @@ TextureImporter:
       bones: []
       spriteID: c2f10fc4f45d6c54cbf12a0adefcf7db
       internalID: -1154749310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coletas
+      rect:
+        serializedVersion: 2
+        x: 3145
+        y: 35
+        width: 805
+        height: 1106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b14c0f76f5fdbc74ab79f8eb48437d3e
+      internalID: 358322294
       vertices: []
       indices: 
       edges: []
@@ -256,6 +278,7 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       Alexander The Human: 460174299
+      Coletas: 358322294
       Dumb: -1385217992
       Guard: -1529937440
       Karen: -1294344256

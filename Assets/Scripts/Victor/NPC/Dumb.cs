@@ -26,6 +26,7 @@ public class Dumb : NPCBase  {
   void Update() {
     transform.rotation = new Quaternion(0.0f, 0.0f, 0.0f, 0.0f);
     Behaviour();
+    CallThePolice();
   }
 
   public override void Behaviour(){

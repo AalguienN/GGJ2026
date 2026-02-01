@@ -24,4 +24,10 @@ public class EnemyController : MonoBehaviour {
     transform.rotation = new Quaternion(0.0f, 0.0f, 0.0f, 0.0f);
     navAgent_.SetDestination(playerPrefab_.transform.position);
   }
+
+  void OnTriggerEnter2D(Collider2D other){
+    if(other.gameObject.GetComponent<PlayerMovement>()){
+      Debug.Log("Abrazo");
+    }
+  }
 }
