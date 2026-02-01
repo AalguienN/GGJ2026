@@ -19,9 +19,10 @@ public class Zone : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.GetComponent<GameController>())
+        if (collision.gameObject.GetComponent<PlayerMovement>())
         {
-            GameController.CurrentPlayerZone = Type;
+            //GameController.Instance.CurrentPlayerZone = Type;
+            GameController.Instance.UpdateCurrentPlayerZone(Type);
         }
     }
 }
