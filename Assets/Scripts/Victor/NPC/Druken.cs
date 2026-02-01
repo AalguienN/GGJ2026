@@ -2,15 +2,13 @@ using UnityEngine;
 
 public class Druken : NPCBase {
 
-  [SerializeField] private float start_; 
-  [SerializeField] private float finish_; 
+  [SerializeField] private Transform start_; 
+  [SerializeField] private Transform finish_; 
   [SerializeField] private float offsetRadious_;
   private int direction_;
   private float offset_;
 
   public override void Start(){
-    start_ = 13.0f;
-    finish_ = -32.0f;
     direction_ = 1;
     base.Start();
 
@@ -31,7 +29,7 @@ public class Druken : NPCBase {
     transform.position = new Vector3(transform.position.x + offset_, transform.position.y, 0.0f);
 
     if(direction_ == 0){
-      Vector3 endPosition = new Vector3(transform.position.x, start_, 0.0f);
+      Vector3 endPosition = new Vector3(transform.position.x, start_.position.y, 0.0f);
       navAgent_.SetDestination(endPosition);
       if(AtEndOfPath()){
         direction_ = 1;
@@ -39,7 +37,7 @@ public class Druken : NPCBase {
     }
 
     if(direction_ == 1){
-      Vector3 endPosition = new Vector3(transform.position.x, finish_, 0.0f);
+      Vector3 endPosition = new Vector3(transform.position.x, finish_.position.y, 0.0f);
       navAgent_.SetDestination(endPosition);
       if(AtEndOfPath()){
         direction_ = 0;
