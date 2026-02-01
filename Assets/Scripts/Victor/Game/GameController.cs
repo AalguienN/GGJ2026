@@ -26,6 +26,8 @@ public class GameController : MonoBehaviour {
   private bool isReset_;
   // private bool isInvincible;
 
+  public GameObject barras;
+
   public float accumulatedTime_;
 
   [Header("AQUI? ESTOY LOCO?")]
@@ -123,7 +125,7 @@ public class GameController : MonoBehaviour {
     enemyController_.isIdle_ = false;
     enemyController_.isLeaving_ = false;
     enemyTimer_.SetActive(true);
-    enemyController_.animator_.SetBool("IsIdle", b);
+    // enemyController_.animator_.SetBool("IsIdle", b);
   } 
 
     void GenerateReceta()
@@ -187,6 +189,7 @@ public class GameController : MonoBehaviour {
     void YOUWIN()
     {
       winCanvas_.SetActive(true);
+      barras.SetActive(false);
       Time.timeScale = 0.0f;  
     }
 

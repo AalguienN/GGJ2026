@@ -11,11 +11,11 @@ public class EnemyController : MonoBehaviour {
   public bool isLeaving_;
   public bool isIdle_;
 
-  public Animator animator_;
+  // public Animator animator_;
 
   void Start(){
     navAgent_ = GetComponent<NavMeshAgent>();
-    animator_ = GetComponent<Animator>();
+    // animator_ = GetComponent<Animator>();
 
     isLeaving_ =  true;
     isIdle_ = true;
@@ -31,7 +31,8 @@ public class EnemyController : MonoBehaviour {
     transform.rotation = new Quaternion(0.0f, 0.0f, 0.0f, 0.0f);
     
     if(!isLeaving_){
-      navAgent_.SetDestination(playerPrefab_.transform.position);
+      Vector3 target = new Vector3(playerPrefab_.transform.position.x, playerPrefab_.transform.position.y, 0.0f);
+      navAgent_.SetDestination(target);
     }
     if(isLeaving_){
       navAgent_.SetDestination(spawnPoint_.position);
@@ -39,13 +40,14 @@ public class EnemyController : MonoBehaviour {
         isIdle_ = true;
       }
     }
-    animator_.SetBool("IsIdle", isIdle_);
+    // animator_.SetBool("IsIdle", isIdle_);
   }
 
   void OnTriggerEnter2D(Collider2D other){
     if(other.gameObject.GetComponent<PlayerMovement>()){
       GameController.Instance.gameOverCanvas_.SetActive(true);
       Time.timeScale = 0.0f;
+      GameController.Instance.barras.SetActive(false);
     }
   }
 
