@@ -89,7 +89,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 8.969999, y: 11.714871}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -149,3 +149,5 @@ MonoBehaviour:
   pathEndThreshold: 0.1
   interestPoints_:
   - {fileID: 0}
+  maxTime_: 0
+  timeMultiplier_: 0

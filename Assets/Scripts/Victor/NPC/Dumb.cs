@@ -25,9 +25,12 @@ public class Dumb : NPCBase  {
 
   void Update() {
     transform.rotation = new Quaternion(0.0f, 0.0f, 0.0f, 0.0f);
-    Behaviour();
-    CallThePolice();
+    if(!suspiciometer_.isDetected_)
+      Behaviour();
+    else
+      CallThePolice();
   }
+
 
   public override void Behaviour(){
     navAgent_.SetDestination(pathList_[currentPoint_ % listLength_]);

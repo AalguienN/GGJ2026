@@ -89,7 +89,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 2}
+  m_Size: {x: 8.95, y: 12.105034}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -127,6 +127,7 @@ MonoBehaviour:
   pathEndThreshold: 0.1
   start_: 0
   finish_: 0
+  offsetRadious_: 0
 --- !u!195 &8799603146993704733
 NavMeshAgent:
   m_ObjectHideFlags: 0
