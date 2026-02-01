@@ -24,8 +24,23 @@ public class PlayerMovement : MonoBehaviour {
   }
 
   void OnTriggerEnter2D(Collider2D other){
-    if(other.tag == "Collectable")
-      Debug.Log("Objetarro");
-  }
+        Draggable d = other.gameObject.GetComponent<Draggable>();
+        if (d != null)
+        {
+            d.Selectable = true;
+        }
+    }
 
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        Draggable d = collision.gameObject.GetComponent<Draggable>();
+        if (d != null && !d.YEYIAMDRAGGEDTHISFRAME)
+        {
+            d.Selectable = false;
+        }
+        else if (d != null && d.YEYIAMDRAGGEDTHISFRAME)
+        {
+            
+        }
+    }
 }
