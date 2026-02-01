@@ -77,8 +77,7 @@ public class Coletas : NPCBase {
 
   void RoamRandomly(){
     if(!isRoomSelected_){
-      // FilterRoom();
-      roomIndex_ = Random.Range(0, 7);
+      FilterRoom();
       isRoomSelected_ = true; 
     }
     if(!hasReachedDestination_){
@@ -107,8 +106,7 @@ public class Coletas : NPCBase {
   void ChangeItem(){
     if(!isItemPicked_){
       if(!isItemSelected_){
-        // FilterItem();
-        itemID_ = Random.Range(0, 8);
+        FilterItem();
         itemToPick_ = itemList_[itemID_];
         isItemSelected_ = true;
       }
