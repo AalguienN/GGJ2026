@@ -161,6 +161,7 @@ public class GameController : MonoBehaviour {
             isReset_ = true;
             enemyController_.isLeaving_ = true;
             RefillEnemyBar();
+            isInvincible = true;
 
             Debug.Log("HELL YEA");
             NextObjective();

@@ -8,6 +8,7 @@ public class Mustang : NPCBase {
   public float maxTime_;
   public float timeMultiplier_;
   public int currentDestination_;
+  public bool hasReachedPosition;
 
   public override void Start() {
     currentDestination_ = 1;
@@ -24,10 +25,16 @@ public class Mustang : NPCBase {
   }
 
   public override void Behaviour(){
-    if(AtEndOfPath()){
+    if(!hasReachedPosition){
+      navAgent_.SetDestination(interestPoints_[currentDestination_ % 3].transform.position);
+      if(AtEndOfPath()){
+        hasReachedPosition = true;
+      }
+    }
+    if(hasReachedPosition){
       if(Waiting()){
-        navAgent_.SetDestination(interestPoints_[currentDestination_ % 3].transform.position);
         ++currentDestination_;
+        hasReachedPosition = false;
       }
     }
   }
