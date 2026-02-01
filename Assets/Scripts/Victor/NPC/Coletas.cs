@@ -69,7 +69,7 @@ public class Coletas : NPCBase {
 
   void FilterItem(){
     lastItem_ = itemID_;
-    itemID_ = Random.Range(0, 8);
+    itemID_ = Random.Range(0, 7);
     if(itemID_ == lastItem_){
       FilterItem();
     }
@@ -114,6 +114,7 @@ public class Coletas : NPCBase {
         navAgent_.SetDestination(itemToPick_.transform.position);
         if(AtEndOfPath()){
           isItemPicked_ = true;
+          isItemSelected_ = false;
         }
       }
     }
