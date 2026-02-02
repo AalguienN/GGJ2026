@@ -21,9 +21,12 @@ public class Druken : NPCBase {
     else
       CallThePolice();
   }
+    private void FixedUpdate()
+    {
+    }
 
 
-  public override void Behaviour(){
+    public override void Behaviour(){
 
     offset_ = Mathf.Cos(Time.time) * offsetRadious_;
     transform.position = new Vector3(transform.position.x + offset_, transform.position.y, 0.0f);
