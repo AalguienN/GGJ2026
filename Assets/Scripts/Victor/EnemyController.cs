@@ -46,6 +46,7 @@ public class EnemyController : MonoBehaviour {
       GameController.Instance.gameOverCanvas_.SetActive(true);
       Time.timeScale = 0.0f;
       GameController.Instance.barras.SetActive(false);
+      GameController.Instance.barraMascara.SetActive(false);
     }
   }
 

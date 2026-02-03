@@ -8,6 +8,7 @@ public class GameController : MonoBehaviour {
 
   public static GameController Instance;
 
+  public GameObject barraMascara;
   [SerializeField] private RectTransform fillHealthBarTransform_;
   [SerializeField] private float timerMultiplier = 2.0f;  
 
@@ -191,6 +192,7 @@ public class GameController : MonoBehaviour {
       winCanvas_.SetActive(true);
       barras.SetActive(false);
       Time.timeScale = 0.0f;  
+      barraMascara.SetActive(false);
     }
 
 }

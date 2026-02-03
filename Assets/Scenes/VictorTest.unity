@@ -2919,7 +2919,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.7058824}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3160,7 +3160,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.7058824}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -4964,6 +4964,10 @@ PrefabInstance:
       propertyPath: enemyTimer_
       value: 
       objectReference: {fileID: 1010451457}
+    - target: {fileID: 7533284564210608853, guid: 19bf6487b51c8414fa4b6ccfcd95e25a, type: 3}
+      propertyPath: barraMascara
+      value: 
+      objectReference: {fileID: 1832474803}
     - target: {fileID: 7533284564210608853, guid: 19bf6487b51c8414fa4b6ccfcd95e25a, type: 3}
       propertyPath: gameOverCanvas_
       value: 
