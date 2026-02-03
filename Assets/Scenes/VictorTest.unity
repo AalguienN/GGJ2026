@@ -1169,11 +1169,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5146029667736866705, guid: 3e4af6dc5dcd87143807eb7ed890dd97, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5146029667736866705, guid: 3e4af6dc5dcd87143807eb7ed890dd97, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5146029667736866705, guid: 3e4af6dc5dcd87143807eb7ed890dd97, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3824,6 +3824,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: ElefanteJuguete Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 5654609761798106316, guid: f14cf82ebaee37a4aaee3600108d34d1, type: 3}
+      propertyPath: m_Size.x
+      value: 10.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5654609761798106316, guid: f14cf82ebaee37a4aaee3600108d34d1, type: 3}
+      propertyPath: m_Size.y
+      value: 5.88
+      objectReference: {fileID: 0}
+    - target: {fileID: 5654609761798106316, guid: f14cf82ebaee37a4aaee3600108d34d1, type: 3}
+      propertyPath: m_Offset.x
+      value: 1.63
+      objectReference: {fileID: 0}
+    - target: {fileID: 5654609761798106316, guid: f14cf82ebaee37a4aaee3600108d34d1, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.85
+      objectReference: {fileID: 0}
     - target: {fileID: 9022299160034833316, guid: f14cf82ebaee37a4aaee3600108d34d1, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.5
@@ -3838,7 +3854,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9022299160034833316, guid: f14cf82ebaee37a4aaee3600108d34d1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -17.058634
+      value: -18
       objectReference: {fileID: 0}
     - target: {fileID: 9022299160034833316, guid: f14cf82ebaee37a4aaee3600108d34d1, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4365,7 +4381,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.01
+  near clip plane: -10
   far clip plane: 1000
   field of view: 60
   orthographic: 1
