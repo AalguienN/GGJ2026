@@ -40,15 +40,12 @@ public class InGameMaskGenerator : MonoBehaviour
 
     public void Generate()
     {
-        Debug.Log("GENERATE!");
         var listOldDragables = transform.GetComponentsInChildren<Draggable>();
-        Debug.Log(listOldDragables.Count());
         foreach (Draggable d in listOldDragables)
         {
             Destroy(d.gameObject);
         }
         var listDragables = maskUI.transform.parent.GetComponentsInChildren<Draggable>();
-        Debug.Log(listDragables.Count());
         foreach (Draggable d in listDragables)
         {
             GameObject clone = Instantiate(d.gameObject);

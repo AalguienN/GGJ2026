@@ -42,7 +42,6 @@ public class Mustang : NPCBase {
   bool Waiting(){
     currentTime_ += Time.deltaTime * timeMultiplier_;
     if(currentTime_ > maxTime_){
-    Debug.Log("Timer Warro");
       currentTime_ = 0.0f;
       return true;
     }

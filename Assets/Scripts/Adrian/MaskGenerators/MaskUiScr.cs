@@ -31,7 +31,6 @@ public class MaskUiScr : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         collision.gameObject.TryGetComponent<Draggable>(out Draggable dragable);
-        Debug.Log("ENTEEER");
         if (dragable != null && InteractUiScaler.Instance?.Interacting == InteractUiScaler.Interaction.Dragging && dragable.YEYIAMDRAGGEDTHISFRAME)
         {
             Debug.Log($"{dragable.gameObject.name}");

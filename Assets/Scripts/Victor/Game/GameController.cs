@@ -1,4 +1,5 @@
 using NUnit.Framework;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -139,7 +140,7 @@ public class GameController : MonoBehaviour {
         {
             while (usados.Contains(r))
             {
-                r = Random.Range(1, Ingredientes.Count);
+                r = UnityEngine.Random.Range(1, Ingredientes.Count);
             }
             usados.Add(r);
             Receta.Add(Ingredientes[r]);
@@ -154,7 +155,6 @@ public class GameController : MonoBehaviour {
     }
 
     public bool IsCorrectMaskCorrect() {
-
         return HoldedTypes.Count == ObjetivoActual.RequiredObjects.Count &&
             HoldedTypes.ToHashSet().SetEquals(ObjetivoActual.RequiredObjects.ToHashSet());
     }
@@ -169,7 +169,6 @@ public class GameController : MonoBehaviour {
             RefillEnemyBar();
             // isInvincible = true;
 
-            Debug.Log("HELL YEA");
             NextObjective();
         }
     }

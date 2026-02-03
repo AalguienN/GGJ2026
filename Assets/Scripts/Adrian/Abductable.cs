@@ -6,27 +6,26 @@ using UnityEngine;
 public class Abductable : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    ObjetivoSO self;
+    public ObjetivoSO self;
 
     void Start()
     {
-        if (GetComponent<Karen>()) { 
-           self = Resources.Load<ObjetivoSO>("ScriptableObjects/ObjetivoKaren");
+        if (GetComponent<Karen>())
+        {
+            self = Resources.Load<ObjetivoSO>("ScriptableObjects/ObjetivoKaren");
         }
         else if (GetComponent<Dumb>())
         {
-            self = Resources.Load<ObjetivoSO>("ScriptableObjects/ObjetivoTonTorres"); 
+            self = Resources.Load<ObjetivoSO>("ScriptableObjects/ObjetivoTonTorres");
         }
         else if (GetComponent<Druken>())
         {
-            self = Resources.Load<ObjetivoSO>("ScriptableObjects/ObjetivoKevin"); 
+            self = Resources.Load<ObjetivoSO>("ScriptableObjects/ObjetivoKevin");
         }
-        //TODO
-        //else if (GetComponent<M>)
-        //{
-
-        //Resources.Load<ObjetivoSO>("ScriptableObjects/ObjetivoMustang");
-        //}
+        else if (GetComponent<Mustang>())
+        {
+            self = Resources.Load<ObjetivoSO>("ScriptableObjects/ObjetivoMustang");
+        }
     }
 
     // Update is called once per frame
@@ -37,9 +36,9 @@ public class Abductable : MonoBehaviour
 
     void OnMouseDown()
     {
-        Debug.Log("CLICK DETECTADO!");
-        Debug.Log($"{GameController.Instance.ObjetivoActual.GetType()} || {self.GetType()}");
         InGameMaskGenerator.Instance.Generate();
+        Debug.Log(self.Name);
+        Debug.Log(GameController.Instance.ObjetivoActual.Name);
         if (self.Name == GameController.Instance.ObjetivoActual.Name)
         {
             if (GameController.Instance.IsCorrectMaskCorrect())
@@ -48,11 +47,11 @@ public class Abductable : MonoBehaviour
                 PlayerMovement.Instance.Abduscan();
                 //gameObject.SetActive(false);
                 corr = StartCoroutine(DeleteIE(1f));
-            }
-            var listDragables =  MaskUiScr.Instance.transform.parent.GetComponentsInChildren<Draggable>();
-            foreach (var d in listDragables)
-            {
-                Destroy(d.gameObject);
+                var listDragables = MaskUiScr.Instance.transform.parent.GetComponentsInChildren<Draggable>();
+                foreach (var d in listDragables)
+                {
+                    Destroy(d.gameObject);
+                }
             }
         }
         else
@@ -68,7 +67,7 @@ public class Abductable : MonoBehaviour
     }
     void OnMouseDrag()
     {
-        
+
     }
 
 }

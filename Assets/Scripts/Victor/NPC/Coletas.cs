@@ -103,6 +103,11 @@ public class Coletas : NPCBase {
   }
 
   void ChangeItem(){
+        if (itemToPick_ == null) {
+            FilterItem();
+            itemToPick_ = itemList_[itemID_];
+            return; 
+        }
     if(!isItemPicked_){
       if(!isItemSelected_){
         FilterItem();
