@@ -13,6 +13,7 @@ public class AnimationLR : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         lastPos = Vector3.zero;
+        lastPos.z = -10;
     }
 
     // Update is called once per frame

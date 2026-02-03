@@ -108,6 +108,7 @@ GameObject:
   - component: {fileID: 176558108440491817}
   - component: {fileID: 2440645210715296174}
   - component: {fileID: 7470510462914305281}
+  - component: {fileID: 2546278452126661603}
   m_Layer: 0
   m_Name: Mustang
   m_TagString: Untagged
@@ -355,3 +356,16 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &2546278452126661603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9212185868519729322}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c837f0697bf993947ac88404a6fe308f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AnimationLR
+  animator: {fileID: 0}

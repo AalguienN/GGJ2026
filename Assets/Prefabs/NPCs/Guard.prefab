@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 1489837910322239241}
   - component: {fileID: 5780530196708817}
   - component: {fileID: 7142271328970862619}
+  - component: {fileID: 6716781974073506226}
+  - component: {fileID: 8100639635433699999}
   m_Layer: 0
   m_Name: Guard
   m_TagString: Untagged
@@ -30,7 +32,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -16.2, y: -26.7, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -82,7 +84,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_MaskInteraction: 0
   m_Sprite: {fileID: -1529937440, guid: 0666f7789b6c62144a7d5fdadf571b1b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -107,6 +109,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyController
   spawnPoint_: {fileID: 0}
+  isLeaving_: 0
+  isIdle_: 0
+  pathEndThreshold: 0.1
 --- !u!195 &5780530196708817
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -116,19 +121,19 @@ NavMeshAgent:
   m_GameObject: {fileID: 7411248351602368966}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 4
-  m_Speed: 8
-  m_Acceleration: 8
+  m_Radius: 10
+  m_Speed: 20
+  m_Acceleration: 20
   avoidancePriority: 50
   m_AngularSpeed: 120
   m_StoppingDistance: 0
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 6
+  m_Height: 1
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 4
+  m_ObstacleAvoidanceType: 0
 --- !u!70 &7142271328970862619
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -166,3 +171,38 @@ CapsuleCollider2D:
   m_Offset: {x: 0.24, y: 0}
   m_Size: {x: 11, y: 12}
   m_Direction: 0
+--- !u!114 &6716781974073506226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7411248351602368966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c837f0697bf993947ac88404a6fe308f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AnimationLR
+  animator: {fileID: 0}
+--- !u!95 &8100639635433699999
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7411248351602368966}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 648bd3d6832d8454ca867c84d402351a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

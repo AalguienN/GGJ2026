@@ -107,7 +107,8 @@ GameObject:
   - component: {fileID: 9035449834477490334}
   - component: {fileID: 5731777233751912709}
   - component: {fileID: 4801388291361140124}
-  - component: {fileID: 2799829104377556907}
+  - component: {fileID: 7870107537758197001}
+  - component: {fileID: 3170654341282068761}
   m_Layer: 0
   m_Name: Karen
   m_TagString: Untagged
@@ -333,7 +334,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!95 &2799829104377556907
+--- !u!95 &7870107537758197001
 Animator:
   serializedVersion: 7
   m_ObjectHideFlags: 0
@@ -355,3 +356,16 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &3170654341282068761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8614720653901348487}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c837f0697bf993947ac88404a6fe308f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AnimationLR
+  animator: {fileID: 0}

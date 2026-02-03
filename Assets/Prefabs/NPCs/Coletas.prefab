@@ -105,6 +105,7 @@ GameObject:
   - component: {fileID: 4014020945193716737}
   - component: {fileID: -6867869082872983446}
   - component: {fileID: 4377261712540344246}
+  - component: {fileID: 7331044271689307541}
   m_Layer: 0
   m_Name: Coletas
   m_TagString: Untagged
@@ -289,3 +290,16 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &7331044271689307541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8553835584110213279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c837f0697bf993947ac88404a6fe308f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AnimationLR
+  animator: {fileID: 0}
