@@ -41,15 +41,19 @@ public class InGameMaskGenerator : MonoBehaviour
     public void Generate()
     {
         var listOldDragables = transform.GetComponentsInChildren<Draggable>();
+        Debug.Log($"DESTROYING?{listOldDragables.Length}");
+
         foreach (Draggable d in listOldDragables)
         {
             Destroy(d.gameObject);
         }
+        Debug.Log($"Creating?{listOldDragables.Length}");
         var listDragables = maskUI.transform.parent.GetComponentsInChildren<Draggable>();
         foreach (Draggable d in listDragables)
         {
             GameObject clone = Instantiate(d.gameObject);
             clone.GetComponent<Draggable>().enabled = false;
+            clone.GetComponent<Collider2D>().enabled = false;
             clone.transform.parent = maskT;
             clone.transform.localPosition = d.transform.localPosition;
             clone.transform.localScale = d.transform.localScale;

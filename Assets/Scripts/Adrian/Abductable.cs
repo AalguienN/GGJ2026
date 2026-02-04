@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Linq;
+using UnityEditor;
 using UnityEngine;
 
 public class Abductable : MonoBehaviour
@@ -34,36 +35,60 @@ public class Abductable : MonoBehaviour
     }
     private Coroutine corr;
 
+    private bool clickCD = false;
+
     void OnMouseDown()
     {
-        InGameMaskGenerator.Instance.Generate();
+        if (clickCD) return;
+        CLickWait();
+
         Debug.Log(self.Name);
         Debug.Log(GameController.Instance.ObjetivoActual.Name);
+        Debug.Log("------------------------------------");
         if (self.Name == GameController.Instance.ObjetivoActual.Name)
         {
+            Debug.Log("=======================");
             if (GameController.Instance.IsCorrectMaskCorrect())
             {
-                GameController.Instance.TryNextObjective();
+                Debug.Log("((((((((((((((((");
                 PlayerMovement.Instance.Abduscan();
                 //gameObject.SetActive(false);
-                corr = StartCoroutine(DeleteIE(1f));
-                var listDragables = MaskUiScr.Instance.transform.parent.GetComponentsInChildren<Draggable>();
-                foreach (var d in listDragables)
-                {
-                    Destroy(d.gameObject);
-                }
+                //corr = StartCoroutine(DeleteIE(1f));
+                corr = StartCoroutine(WAIT());
             }
         }
         else
         {
+            Debug.Log("Va a ser que no");
             InGameMaskGenerator.Instance.Remove();
         }
     }
-    IEnumerator aaaaaaaaaa;
-    IEnumerator DeleteIE(float waitTime)
+
+    //IEnumerator aaaaaaaaaa;
+    //IEnumerator DeleteIE(float waitTime)
+    //{
+    //    yield return new WaitForSeconds(waitTime);
+    //    gameObject.SetActive(false);
+    //}
+
+    IEnumerator WAIT()
     {
-        yield return new WaitForSeconds(waitTime);
+        yield return new WaitForSeconds(2f);
+        InGameMaskGenerator.Instance.Generate();
+        GameController.Instance.TryNextObjective();
         gameObject.SetActive(false);
+        var listDragables = MaskUiScr.Instance.transform.parent.GetComponentsInChildren<Draggable>();
+        foreach (var d in listDragables)
+        {
+            Destroy(d.gameObject);
+        }
+    }
+
+    IEnumerator CLickWait()
+    {
+        clickCD = true;
+        yield return new WaitForSeconds(2f);
+        clickCD = false;
     }
     void OnMouseDrag()
     {
