@@ -1,17 +1,17 @@
-using System.Collections.Generic;
 using UnityEngine;
 
 public class CuadroManager : MonoBehaviour {
 
-  [SerializeField] private List<GameObject> childs;
-  private int lastChild;
-  private int activeCount;
+  private GameObject cuadroParent;
+  private CuadroController cc;
 
-  void Start() {
-    childs = new List<GameObject>();
-    for(int i = 0; i < transform.childCount; ++i){
-      childs.Add(transform.GetChild(i).gameObject.transform.GetChild(1).gameObject);
-    }
+  void Start(){
+    cc = transform.parent.transform.parent.GetComponent<CuadroController>();
+    cuadroParent = transform.parent.gameObject;
+  }
+
+  void OnMouseDown(){
+    cuadroParent.SetActive(cc.isActive = !cc.isActive);
   }
 
 

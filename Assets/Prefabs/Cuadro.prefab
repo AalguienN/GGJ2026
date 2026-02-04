@@ -261,7 +261,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 370456991, guid: 4b293877a4eb1f440a56ce42fff5ca24, type: 3}
+  m_Sprite: {fileID: -856452955, guid: ebf826abd859ada40963f26db528ccfe, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -282,6 +282,8 @@ GameObject:
   - component: {fileID: 1143081106932676706}
   - component: {fileID: 9075853775202032996}
   - component: {fileID: 6315513403584379588}
+  - component: {fileID: 8758227004175726856}
+  - component: {fileID: 3389080301314515167}
   m_Layer: 5
   m_Name: Fondo
   m_TagString: Untagged
@@ -330,7 +332,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
   m_Color: {r: 0, g: 0, b: 0, a: 0.7058824}
-  m_RaycastTarget: 0
+  m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -346,6 +348,65 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!61 &8758227004175726856
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4387689692508842556}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 100, y: 100}
+  m_EdgeRadius: 0
+--- !u!114 &3389080301314515167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4387689692508842556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b92def82970d8a841af2d4e0b7fb31c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CuadroManager
+  cc: {fileID: 7952615717722795612}
 --- !u!1 &5913876823390092223
 GameObject:
   m_ObjectHideFlags: 0
@@ -411,7 +472,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Artista
+  m_text: 'Animator
 
 '
   m_isRightToLeft: 0
@@ -513,7 +574,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -131.7, y: 22.9, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.6666667, y: 0.6666667, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 543865140559974421}
@@ -578,6 +639,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b44ff1a95af6dad4caaa248a993c8daa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CuadroController
+  isActive: 0
 --- !u!1 &6423332593395618845
 GameObject:
   m_ObjectHideFlags: 0
@@ -643,7 +705,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Maria Carretero
+  m_text: Gabriel Camacho
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ef8deffe988c809408581d25671d9261, type: 2}
   m_sharedMaterial: {fileID: -4844107245543920136, guid: ef8deffe988c809408581d25671d9261, type: 2}

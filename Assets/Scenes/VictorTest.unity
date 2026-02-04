@@ -435,26 +435,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2013783954}
     m_Modifications:
-    - target: {fileID: 466537096285300627, guid: 824d3f6aecf6af94ca0fe4c03d6628b5, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 466537096285300627, guid: 824d3f6aecf6af94ca0fe4c03d6628b5, type: 3}
-      propertyPath: m_BlockingObjects
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 466537096285300627, guid: 824d3f6aecf6af94ca0fe4c03d6628b5, type: 3}
-      propertyPath: m_BlockingMask.m_Bits
-      value: 4294967295
-      objectReference: {fileID: 0}
-    - target: {fileID: 1480438300427203636, guid: 824d3f6aecf6af94ca0fe4c03d6628b5, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: -856452955, guid: ebf826abd859ada40963f26db528ccfe, type: 3}
-    - target: {fileID: 1491446682296728672, guid: 824d3f6aecf6af94ca0fe4c03d6628b5, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6195945174589043507, guid: 824d3f6aecf6af94ca0fe4c03d6628b5, type: 3}
       propertyPath: m_Camera
       value: 
@@ -462,28 +442,6 @@ PrefabInstance:
     - target: {fileID: 6238351293929123945, guid: 824d3f6aecf6af94ca0fe4c03d6628b5, type: 3}
       propertyPath: m_Name
       value: Cuadro Gabi
-      objectReference: {fileID: 0}
-    - target: {fileID: 6315513403584379588, guid: 824d3f6aecf6af94ca0fe4c03d6628b5, type: 3}
-      propertyPath: m_RaycastTarget
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7717817799306914144, guid: 824d3f6aecf6af94ca0fe4c03d6628b5, type: 3}
-      propertyPath: m_text
-      value: 'Animator
-
-'
-      objectReference: {fileID: 0}
-    - target: {fileID: 8006729128652636019, guid: 824d3f6aecf6af94ca0fe4c03d6628b5, type: 3}
-      propertyPath: m_text
-      value: Gabriel Camacho
-      objectReference: {fileID: 0}
-    - target: {fileID: 8232273543207655746, guid: 824d3f6aecf6af94ca0fe4c03d6628b5, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.6666667
-      objectReference: {fileID: 0}
-    - target: {fileID: 8232273543207655746, guid: 824d3f6aecf6af94ca0fe4c03d6628b5, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.6666667
       objectReference: {fileID: 0}
     - target: {fileID: 8232273543207655746, guid: 824d3f6aecf6af94ca0fe4c03d6628b5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3407,6 +3365,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6195945174589043507, guid: 824d3f6aecf6af94ca0fe4c03d6628b5, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 1895426932}
     - target: {fileID: 6238351293929123945, guid: 824d3f6aecf6af94ca0fe4c03d6628b5, type: 3}
       propertyPath: m_Name
       value: Cuadro Garret
@@ -4570,7 +4532,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2013783954}
-  - component: {fileID: 2013783953}
   m_Layer: 0
   m_Name: Cuadros
   m_TagString: Untagged
@@ -4578,19 +4539,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2013783953
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2013783952}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b92def82970d8a841af2d4e0b7fb31c0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CuadroManager
-  childs: []
 --- !u!4 &2013783954
 Transform:
   m_ObjectHideFlags: 0
@@ -4759,6 +4707,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2013783954}
     m_Modifications:
+    - target: {fileID: 1381343821642130655, guid: 824d3f6aecf6af94ca0fe4c03d6628b5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1480438300427203636, guid: 824d3f6aecf6af94ca0fe4c03d6628b5, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -5142,6 +5094,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 4241792023961401103, guid: 7b0e71abd6df5e8449db2ec40258121a, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 7058415113825197039, guid: 7b0e71abd6df5e8449db2ec40258121a, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -5159,10 +5115,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2013783954}
     m_Modifications:
+    - target: {fileID: 178880843462182451, guid: 824d3f6aecf6af94ca0fe4c03d6628b5, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1381343821642130655, guid: 824d3f6aecf6af94ca0fe4c03d6628b5, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1480438300427203636, guid: 824d3f6aecf6af94ca0fe4c03d6628b5, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 370456991, guid: 4b293877a4eb1f440a56ce42fff5ca24, type: 3}
     - target: {fileID: 6195945174589043507, guid: 824d3f6aecf6af94ca0fe4c03d6628b5, type: 3}
       propertyPath: m_Camera
       value: 
@@ -5592,7 +5556,7 @@ PrefabInstance:
       objectReference: {fileID: 476599285}
     - target: {fileID: 7533284564210608853, guid: 19bf6487b51c8414fa4b6ccfcd95e25a, type: 3}
       propertyPath: enemyTimeMultiplier_
-      value: 20
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 7533284564210608853, guid: 19bf6487b51c8414fa4b6ccfcd95e25a, type: 3}
       propertyPath: fillHealthBarTransform_

@@ -4,22 +4,22 @@ public class CuadroController : MonoBehaviour {
 
   private Transform haloChildTr;
   private Transform imageChildTr;
-  private bool isActive;
+  public bool isActive;
 
   void Start(){
     haloChildTr = transform.GetChild(0);
     imageChildTr = transform.GetChild(1);
     isActive = imageChildTr.gameObject.activeInHierarchy;
-
   }
 
-
   void OnTriggerEnter2D(Collider2D other){
-    haloChildTr.gameObject.SetActive(true);
+    if(other.tag == "Player")
+      haloChildTr.gameObject.SetActive(true);
   }
 
   void OnTriggerExit2D(Collider2D other){
-    haloChildTr.gameObject.SetActive(false);
+    if(other.tag == "Player")
+      haloChildTr.gameObject.SetActive(false);
   }
 
   void OnMouseOver(){
@@ -32,12 +32,14 @@ public class CuadroController : MonoBehaviour {
 
   void OnMouseDown(){
     imageChildTr.gameObject.SetActive(isActive = !isActive);
-    if(isActive)
-      Time.timeScale = 0.0f;
-    else
-      Time.timeScale = 1.0f;
   }
 
+  void OnEnable(){
+    Time.timeScale = 0.0f;
+  }
 
+  void OnDisable(){
+    Time.timeScale = 1.0f;
+  }
 
 }
