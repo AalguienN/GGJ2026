@@ -21,11 +21,16 @@ public class Draggable : MonoBehaviour
 
     public GameObject selectableHalo;
 
+    [SerializeField] private AudioSource _as;
+    [SerializeField] private AudioClip pickupClip;
+    [SerializeField] private AudioClip dropClip;
+
     void Start()
     {
         myMainCamera = Camera.main; // Camera.main is expensive ; cache it here
         YEYIAMDRAGGEDTHISFRAME = false;
         WillBeMadeUnselectable = false;
+        _as = GetComponent<AudioSource>();
     }
 
     private void Update()
@@ -71,12 +76,17 @@ public class Draggable : MonoBehaviour
 
     private void OnMouseUp()
     {
+        if (YEYIAMDRAGGEDTHISFRAME) MakeDropSound();
         YEYIAMDRAGGEDTHISFRAME = false;
         InteractUiScaler.Instance.Interacting = InteractUiScaler.Interaction.NoInteraction;
     }
 
     void MakeSound()
     {
-
+        if (_as) _as.PlayOneShot(pickupClip);
+    }
+    void MakeDropSound()
+    {
+        if (_as) _as.PlayOneShot(dropClip);
     }
 }
