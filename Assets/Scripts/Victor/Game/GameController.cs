@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour {
 
@@ -56,6 +57,7 @@ public class GameController : MonoBehaviour {
         Instance = this;
     }
     else Destroy(gameObject);
+
     accumulatedTime_ = 0.0f;
 
     originalWidth_ = fillHealthBarTransform_.sizeDelta.x;
@@ -71,6 +73,7 @@ public class GameController : MonoBehaviour {
     menu_.SetActive(true);
   }
 
+
   void Update() {
     MaskTimer();
     EnemyTimer();
@@ -83,6 +86,7 @@ public class GameController : MonoBehaviour {
         menu_.SetActive(false);
       }
     }
+
   }
 
   public void RefillMaskBar(){
@@ -193,5 +197,9 @@ public class GameController : MonoBehaviour {
       Time.timeScale = 0.0f;  
       barraMascara.SetActive(false);
     }
+
+  public void RestartLevel(){
+    SceneManager.LoadScene(0);
+  }
 
 }

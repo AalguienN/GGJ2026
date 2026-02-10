@@ -208,6 +208,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16889c6e38c56e9408215bebb793a059, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Abductable
+  self: {fileID: 0}
 --- !u!50 &4415120443794263211
 Rigidbody2D:
   serializedVersion: 5
