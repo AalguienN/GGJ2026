@@ -52,6 +52,8 @@ public class Draggable : MonoBehaviour
         Debug.Log($"{planeDist} {this.name}");
         offset = transform.position - camRay.GetPoint(planeDist);
         InteractUiScaler.Instance.Interacting = InteractUiScaler.Interaction.Dragging;
+
+        MakeSound();
     }
 
     void OnMouseDrag()
@@ -71,5 +73,10 @@ public class Draggable : MonoBehaviour
     {
         YEYIAMDRAGGEDTHISFRAME = false;
         InteractUiScaler.Instance.Interacting = InteractUiScaler.Interaction.NoInteraction;
+    }
+
+    void MakeSound()
+    {
+
     }
 }
