@@ -57,6 +57,7 @@ public class GameController : MonoBehaviour {
         Instance = this;
     }
     else Destroy(gameObject);
+
     accumulatedTime_ = 0.0f;
 
     originalWidth_ = fillHealthBarTransform_.sizeDelta.x;
@@ -71,6 +72,7 @@ public class GameController : MonoBehaviour {
     GenerateReceta();
     menu_.SetActive(true);
   }
+
 
   void Update() {
     MaskTimer();
@@ -197,9 +199,7 @@ public class GameController : MonoBehaviour {
     }
 
   public void RestartLevel(){
-    SceneManager.LoadScene(0, LoadSceneMode.Single);
-    // Time.timeScale = 1.0f;
-    // menu_.SetActive(true);
+    SceneManager.LoadScene(0);
   }
 
 }
