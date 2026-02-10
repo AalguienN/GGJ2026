@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour {
 
@@ -83,6 +84,7 @@ public class GameController : MonoBehaviour {
         menu_.SetActive(false);
       }
     }
+
   }
 
   public void RefillMaskBar(){
@@ -193,5 +195,9 @@ public class GameController : MonoBehaviour {
       Time.timeScale = 0.0f;  
       barraMascara.SetActive(false);
     }
+
+  public void RestartLevel(){
+    SceneManager.LoadScene(0, LoadSceneMode.Single);
+  }
 
 }
