@@ -33,6 +33,8 @@ public class GameController : MonoBehaviour {
 
   public float accumulatedTime_;
 
+  public AudioSource guardAudio;
+
   [Header("AQUI? ESTOY LOCO?")]
   public Zone.ZType CurrentPlayerZone = Zone.ZType.Outside;
   public void UpdateCurrentPlayerZone(Zone.ZType zone)
@@ -101,6 +103,7 @@ public class GameController : MonoBehaviour {
     enemyTimeRemaining_.sizeDelta = new Vector2(enemyOriginalWidth_, 0.0f);
     enemyWidth_ = enemyOriginalWidth_;
     enemyTimer_.SetActive(false);
+    guardAudio.Stop();
   }
 
   void MaskTimer(){
@@ -112,7 +115,7 @@ public class GameController : MonoBehaviour {
       }
     }
     if(isEmpty_) {
-      SpawnGuard(false);
+      SpawnGuard();
     }
   }
 
@@ -127,10 +130,13 @@ public class GameController : MonoBehaviour {
     }
   }
 
-  public void SpawnGuard(bool b){
+  public void SpawnGuard(){
+    enemyTimer_.SetActive(true);
+    if(enemyController_.isIdle_){
+      guardAudio.Play();
+    }
     enemyController_.isIdle_ = false;
     enemyController_.isLeaving_ = false;
-    enemyTimer_.SetActive(true);
     // enemyController_.animator_.SetBool("IsIdle", b);
   } 
 

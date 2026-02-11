@@ -22,7 +22,7 @@ public class NPCBase : MonoBehaviour {
     navAgent_.speed = alertSpeed_;
     navAgent_.SetDestination(frontDoorPosition_.transform.position);
     if(AtEndOfPath()){
-      gameController_.SpawnGuard(false);
+      gameController_.SpawnGuard();
       suspiciometer_.isDetected_ = false;
     }
   }
