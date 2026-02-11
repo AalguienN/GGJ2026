@@ -34,6 +34,10 @@ public class GameController : MonoBehaviour {
   public float accumulatedTime_;
 
   public AudioSource guardAudio;
+  public AudioSource globalAudio;
+
+  public List<AudioClip> audioList;
+  public float gameAudioLoopLength;
 
   [Header("AQUI? ESTOY LOCO?")]
   public Zone.ZType CurrentPlayerZone = Zone.ZType.Outside;
@@ -72,7 +76,10 @@ public class GameController : MonoBehaviour {
         Resources.Load<ObjetivoSO>("ScriptableObjects/ObjetivoTonTorres"), 
     };
     GenerateReceta();
+    UpdateCurrentPlayerZone(CurrentPlayerZone);
     menu_.SetActive(true);
+    globalAudio.clip = audioList[0];
+    globalAudio.Play();
   }
 
 
@@ -83,9 +90,15 @@ public class GameController : MonoBehaviour {
     if(Input.GetButtonDown("Cancel")){
       if(!menu_.activeInHierarchy){
         menu_.SetActive(true);
+        Time.timeScale = 0.0f;
+        globalAudio.clip = audioList[0];
+        globalAudio.Play();
       }
       else{
         menu_.SetActive(false);
+        Time.timeScale = 1.0f;
+        globalAudio.clip = audioList[2];
+        globalAudio.Play();
       }
     }
 
@@ -202,10 +215,13 @@ public class GameController : MonoBehaviour {
       barras.SetActive(false);
       Time.timeScale = 0.0f;  
       barraMascara.SetActive(false);
+
     }
 
   public void RestartLevel(){
     SceneManager.LoadScene(0);
+    globalAudio.clip = audioList[3];
+    globalAudio.Play();
   }
 
 }

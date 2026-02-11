@@ -110,4 +110,14 @@ public class Tutorial : MonoBehaviour
         }
     }
 
+    void OnEnable(){
+        GameController.Instance.globalAudio.clip = GameController.Instance.audioList[1];
+        GameController.Instance.globalAudio.Play();
+    }
+
+    void OnDisable(){
+        GameController.Instance.globalAudio.clip = GameController.Instance.audioList[2];
+        GameController.Instance.globalAudio.Play();
+    }
+
 }

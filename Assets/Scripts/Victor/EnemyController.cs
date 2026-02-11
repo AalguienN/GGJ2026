@@ -47,6 +47,8 @@ public class EnemyController : MonoBehaviour {
       Time.timeScale = 0.0f;
       GameController.Instance.barras.SetActive(false);
       GameController.Instance.barraMascara.SetActive(false);
+      GameController.Instance.globalAudio.clip = GameController.Instance.audioList[4];
+      GameController.Instance.globalAudio.Play();
     }
   }
 

@@ -18,11 +18,11 @@ public class AudioGod : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
-    {
+    // void Update()
+    // {
 
-        Console.WriteLine(gameObject.name);
-    }
+    //     Console.WriteLine(gameObject.name);
+    // }
 
     public void UpdateMusicByZone(Zone.ZType zone)
     {
