@@ -22,6 +22,9 @@ public class Menu : MonoBehaviour {
     }
 
     public void ContinueButton(){
+      Time.timeScale = 1.0f;
+      GameController.Instance.globalAudio.clip = GameController.Instance.audioList[2];
+      GameController.Instance.globalAudio.Play();
       gameObject.SetActive(false);
     }
 
