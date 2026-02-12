@@ -58,4 +58,13 @@ public class PlayerMovement : MonoBehaviour
     {
         animator.SetTrigger("Abduscan");
     }
+
+    public AudioSource _as;
+    public AudioClip _ac;
+    public void PlaySound()
+    {
+        if (!_as.isPlaying)
+        _as.PlayOneShot(_ac);
+    }
+
 }

@@ -8,6 +8,8 @@ public class Abductable : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public ObjetivoSO self;
+    public PiumPium piumpium;
+    public PlayerMovement player;
 
     void Start()
     {
@@ -27,6 +29,7 @@ public class Abductable : MonoBehaviour
         {
             self = Resources.Load<ObjetivoSO>("ScriptableObjects/ObjetivoMustang");
         }
+        player = GameObject.FindAnyObjectByType<PlayerMovement>();
     }
 
     // Update is called once per frame
@@ -50,6 +53,8 @@ public class Abductable : MonoBehaviour
             Debug.Log("=======================");
             if (GameController.Instance.IsCorrectMaskCorrect())
             {
+                player.PlaySound();
+                piumpium.t2 = this.transform; 
                 Debug.Log("((((((((((((((((");
                 PlayerMovement.Instance.Abduscan();
                 //gameObject.SetActive(false);
